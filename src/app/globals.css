@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #e3312c;
+  --color-brand-red-dark: #9f1714;
+  --color-brand-black: #000205;
+  --color-surface: #0b0d10;
+  --color-surface-soft: #131519;
+  --color-muted: #aaaeb5;
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+}
