@@ -21,19 +21,31 @@ Atualmente, experiência institucional está pronta. Login, dashboard, persistê
 
 ## Requisitos
 
-- Node.js 20.9 ou superior
-- npm
+Antes de começar, instale:
+
+- [Git](https://git-scm.com/downloads)
+- [Node.js](https://nodejs.org/) 20.9 ou superior — npm já acompanha instalação
+
+Confirme instalações:
+
+```bash
+git --version
+node --version
+npm --version
+```
 
 ## Executando localmente
 
 ```bash
-git clone git@github.com:iweti-com/Frattellianos.git
+git clone https://github.com/iweti-com/Frattellianos.git
 cd Frattellianos
 npm ci
 npm run dev
 ```
 
 Acesse [http://localhost:3000](http://localhost:3000) no navegador.
+
+Clone por HTTPS não exige chave SSH para repositório público. Caso repositório seja privado, conta usada precisa ter acesso autorizado no GitHub.
 
 Para gerar e executar versão de produção:
 
