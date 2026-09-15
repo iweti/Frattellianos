@@ -85,7 +85,7 @@ function DailyCard({ entry }: { entry: DailyFeedEntry }) {
         entry.isToday ? "border-brand-red/70" : "border-white/[0.14]"
       }`}
     >
-      <header className="flex items-center gap-3 border-b border-white/[0.1] px-5 py-4 max-[620px]:px-4">
+      <header className="flex items-center gap-3 border-b border-white/10 px-5 py-4 max-[620px]:px-4">
         <BrandAvatar />
         <div className="min-w-0">
           <p className="m-0 text-sm text-muted">
@@ -104,10 +104,10 @@ function DailyCard({ entry }: { entry: DailyFeedEntry }) {
       </header>
 
       <blockquote className="m-0 px-[clamp(1.25rem,4vw,2.5rem)] py-[clamp(2rem,5vw,3.5rem)]">
-        <p className="mb-6 text-balance font-serif text-[clamp(1.65rem,4vw,3rem)] leading-[1.18] tracking-[-0.025em] text-white">
+        <p className="mb-6 text-balance font-serif text-[clamp(1.65rem,4vw,3rem)] leading-[1.18] tracking-tight text-white">
           “{entry.verse.text}”
         </p>
-        <footer className="flex flex-wrap items-center gap-2 text-sm font-extrabold tracking-[0.1em] text-brand-red uppercase">
+        <footer className="flex flex-wrap items-center gap-2 text-sm font-extrabold tracking-widest text-brand-red uppercase">
           <cite className="not-italic">{entry.verse.reference}</cite>
           <span aria-hidden="true">•</span>
           <span>{entry.verse.translation}</span>
@@ -120,8 +120,8 @@ function DailyCard({ entry }: { entry: DailyFeedEntry }) {
 function LocalCard({ message }: { message: LocalMessage }) {
   return (
     <article className="overflow-hidden rounded-xl border border-white/[0.14] bg-surface shadow-[0_18px_60px_rgba(0,0,0,0.18)]">
-      <header className="flex items-center gap-3 border-b border-white/[0.1] px-5 py-4 max-[620px]:px-4">
-        <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-white/[0.08] font-serif text-lg italic text-white">
+      <header className="flex items-center gap-3 border-b border-white/10 px-5 py-4 max-[620px]:px-4">
+        <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-white/8 font-serif text-lg italic text-white">
           V
         </span>
         <div>
@@ -197,21 +197,21 @@ export function MessageFeed() {
   return (
     <>
       <form
-        className="mb-12 overflow-hidden rounded-xl border border-white/[0.18] bg-surface shadow-[0_18px_60px_rgba(0,0,0,0.22)] focus-within:border-brand-red/70"
+        className="mb-12 overflow-hidden rounded-xl border border-white/18 bg-surface shadow-[0_18px_60px_rgba(0,0,0,0.22)]"
         onSubmit={handleSubmit}
       >
         <label className="sr-only" htmlFor="local-message">
           Escreva uma mensagem
         </label>
         <textarea
-          className="block min-h-32 w-full resize-y bg-transparent px-5 py-5 text-base leading-7 text-white outline-none placeholder:text-muted max-[620px]:min-h-28 max-[620px]:px-4"
+          className="block min-h-32 w-full resize-y bg-transparent px-5 py-5 text-base leading-7 text-white outline-none max-[620px]:min-h-28 max-[620px]:px-4"
           id="local-message"
           maxLength={maxMessageLength}
           onChange={(event) => setDraft(event.target.value)}
           placeholder="Escreva uma mensagem..."
           value={draft}
         />
-        <div className="flex items-center justify-between gap-4 border-t border-white/[0.1] px-4 py-3">
+        <div className="flex items-center justify-between gap-4 border-t border-white/10 px-4 py-3">
           <span className="text-xs text-muted">
             Salva apenas neste navegador
           </span>
@@ -236,7 +236,7 @@ export function MessageFeed() {
 
       <div className="grid gap-5" aria-live="polite">
         {!now ? (
-          <div className="h-72 animate-pulse rounded-xl border border-white/[0.1] bg-surface" />
+          <div className="h-72 animate-pulse rounded-xl border border-white/10 bg-surface" />
         ) : (
           items.map((item) =>
             item.kind === "daily" ? (

@@ -8,7 +8,7 @@ export const metadata: Metadata = { title: "Acesso" };
 
 export default function LoginPage() {
   return (
-    <main className="mx-auto grid min-h-screen w-[calc(100%_-_2rem)] max-w-[540px] content-center gap-8 overflow-hidden py-16">
+    <main className="mx-auto grid min-h-screen w-[calc(100%-2rem)] max-w-135 content-center gap-8 overflow-hidden py-16">
       <Logo />
       <section className="bg-white p-[clamp(1.75rem,6vw,3.5rem)] text-brand-black">
         <Eyebrow>Área reservada</Eyebrow>

@@ -33,7 +33,7 @@ export default function Home() {
 
       <main className="overflow-hidden">
         <section
-          className="mx-auto grid min-h-[calc(100vh-82px)] w-[calc(100%-2rem)] max-w-[1180px] items-center gap-[clamp(2rem,6vw,6rem)] py-20 max-[900px]:min-h-0 max-[900px]:grid-cols-1 max-[900px]:pt-16 max-[620px]:py-14 min-[901px]:grid-cols-[minmax(0,1.04fr)_minmax(360px,0.96fr)]"
+          className="mx-auto grid min-h-[calc(100vh-82px)] w-[calc(100%-2rem)] max-w-295 items-center gap-[clamp(2rem,6vw,6rem)] py-20 max-[900px]:min-h-0 max-[900px]:grid-cols-1 max-[900px]:pt-16 max-[620px]:py-14 min-[901px]:grid-cols-[minmax(0,1.04fr)_minmax(360px,0.96fr)]"
           aria-labelledby="hero-title"
         >
           <div>
@@ -71,7 +71,7 @@ export default function Home() {
             </div>
           </div>
 
-          <figure className="relative m-0 border border-brand-red/35 bg-[linear-gradient(145deg,rgba(227,49,44,0.35),rgba(255,255,255,0.03))] p-3 before:absolute before:-z-10 before:inset-[15%_-8%_-8%_20%] before:bg-brand-red before:opacity-[0.18] before:blur-[70px] before:content-[''] max-[900px]:max-w-[680px]">
+          <figure className="relative m-0 border border-brand-red/35 bg-[linear-gradient(145deg,rgba(227,49,44,0.35),rgba(255,255,255,0.03))] p-3 before:absolute before:-z-10 before:inset-[15%_-8%_-8%_20%] before:bg-brand-red before:opacity-[0.18] before:blur-[70px] before:content-[''] max-[900px]:max-w-170">
             <img
               className="block aspect-[1.64] w-full object-cover"
               src="/images/logo-frattellianos.svg"
@@ -81,7 +81,7 @@ export default function Home() {
         </section>
         1
         <section
-          className="grid scroll-mt-20 gap-[clamp(3rem,8vw,8rem)] bg-white px-[max(1rem,calc((100vw_-_1180px)/2))] py-[clamp(5rem,10vw,9rem)] text-brand-black max-[900px]:grid-cols-1 min-[901px]:grid-cols-[minmax(0,0.78fr)_minmax(0,1.22fr)]"
+          className="grid scroll-mt-20 gap-[clamp(3rem,8vw,8rem)] bg-white px-[max(1rem,calc((100vw-1180px)/2))] py-[clamp(5rem,10vw,9rem)] text-brand-black max-[900px]:grid-cols-1 min-[901px]:grid-cols-[minmax(0,0.78fr)_minmax(0,1.22fr)]"
           id="historia"
           aria-labelledby="story-title"
         >
@@ -106,7 +106,7 @@ export default function Home() {
                 className="grid grid-cols-[3rem_1fr] gap-5 border-t border-brand-black/20 py-8 last:border-b max-[620px]:grid-cols-1"
                 key={chapter.number}
               >
-                <span className="text-2xl text-xl font-extrabold tracking-[0.14em] text-brand-red">
+                <span className="text-2xl font-extrabold tracking-[0.14em] text-brand-red">
                   {chapter.number}
                 </span>
                 <div>
@@ -120,7 +120,7 @@ export default function Home() {
           </ol>
         </section>
         <section
-          className="mx-auto w-[calc(100%_-_2rem)] max-w-[920px] py-[clamp(5rem,10vw,9rem)] text-center"
+          className="mx-auto w-[calc(100%-2rem)] max-w-230 py-[clamp(5rem,10vw,9rem)] text-center"
           aria-labelledby="invitation-title"
         >
           <Eyebrow>O próximo capítulo</Eyebrow>

@@ -31,12 +31,12 @@ export default function MessagePage() {
 
       <main className="overflow-hidden">
         <section
-          className="mx-auto w-[calc(100%_-_2rem)] max-w-[1000px] py-[clamp(5rem,12vw,10rem)] pb-[clamp(4rem,8vw,7rem)] text-center"
+          className="mx-auto w-[calc(100%-2rem)] max-w-250 py-[clamp(5rem,12vw,10rem)] pb-[clamp(4rem,8vw,7rem)] text-center"
           aria-labelledby="message-title"
         >
           <Eyebrow>Nossa mensagem</Eyebrow>
           <h1
-            className="mx-auto mb-6 max-w-[900px] text-balance font-serif text-[clamp(3rem,7vw,6.8rem)] leading-[0.94] font-normal tracking-[-0.055em]"
+            className="mx-auto mb-6 max-w-225 text-balance font-serif text-[clamp(3rem,7vw,6.8rem)] leading-[0.94] font-normal tracking-[-0.055em]"
             id="message-title"
           >
             Falar de Cristo de um jeito que todos entendam.
@@ -49,12 +49,12 @@ export default function MessagePage() {
         </section>
 
         <section
-          className="mx-auto grid w-[calc(100%_-_2rem)] max-w-[1180px] grid-cols-1 border border-white/[0.14] min-[901px]:grid-cols-3"
+          className="mx-auto grid w-[calc(100%-2rem)] max-w-295 grid-cols-1 border border-white/[0.14] min-[901px]:grid-cols-3"
           aria-label="Missão, visão e valores"
         >
           {pillars.map((pillar, index) => (
             <article
-              className="flex min-h-72 flex-col border-b border-white/[0.14] p-[clamp(1.5rem,3.5vw,3rem)] last:border-b-0 min-[901px]:min-h-96 min-[901px]:border-r min-[901px]:border-b-0 min-[901px]:last:border-r-0"
+              className="flex min-h-72 flex-col border-b border-white/[0.14] p-[clamp(1.5rem,3.5vw,3rem)] min-[901px]:min-h-96 min-[901px]:border-r min-[901px]:border-b-0 min-[901px]:last:border-r-0"
               key={pillar.title}
             >
               <span className="text-[0.8rem] font-extrabold tracking-[0.14em] text-brand-red">
@@ -70,8 +70,8 @@ export default function MessagePage() {
           ))}
         </section>
 
-        <blockquote className="mx-auto my-[clamp(4rem,9vw,8rem)] w-[calc(100%_-_2rem)] max-w-[1180px] bg-brand-red p-[clamp(3rem,7vw,6rem)] text-center text-white max-[620px]:w-full">
-          <p className="mx-auto mb-5 max-w-[850px] font-serif text-[clamp(2rem,5vw,4.8rem)] leading-[1.08]">
+        <blockquote className="mx-auto my-[clamp(4rem,9vw,8rem)] w-[calc(100%-2rem)] max-w-295 bg-brand-red p-[clamp(3rem,7vw,6rem)] text-center text-white max-[620px]:w-full">
+          <p className="mx-auto mb-5 max-w-212.5 font-serif text-[clamp(2rem,5vw,4.8rem)] leading-[1.08]">
             “Eis aí um rei que irá reinar com justiça.”
           </p>
           <cite className="text-[0.8rem] font-extrabold tracking-[0.16em] not-italic uppercase">
@@ -80,7 +80,7 @@ export default function MessagePage() {
         </blockquote>
 
         <section
-          className="mx-auto w-[calc(100%_-_2rem)] max-w-[920px] pb-[clamp(5rem,10vw,9rem)] text-center"
+          className="mx-auto w-[calc(100%-2rem)] max-w-230 pb-[clamp(5rem,10vw,9rem)] text-center"
           aria-labelledby="manifesto-title"
         >
           <Eyebrow>Em uma frase</Eyebrow>
