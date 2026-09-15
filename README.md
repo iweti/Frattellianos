@@ -68,6 +68,7 @@ npm run start
 | --- | --- | --- |
 | `/` | Disponível | História e apresentação do Frattellianos |
 | `/mensagem` | Disponível | Missão, visão e valores da comunidade |
+| `/palavra` | Disponível | Blog local com mensagens e versículos diários |
 | `/login` | Preparação | Entrada reservada para autenticação futura |
 
 ## Estrutura

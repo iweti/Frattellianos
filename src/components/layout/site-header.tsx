@@ -3,15 +3,15 @@ import Link from "next/link";
 import { Logo } from "@/components/ui/logo";
 import { joinClasses } from "@/lib/utils";
 
-type PublicRoute = "historia" | "mensagem";
+type PublicRoute = "historia" | "palavra" | "missao";
 
 export function SiteHeader({ active }: { active: PublicRoute }) {
   const linkClasses =
-    "rounded-full px-4 py-[0.7rem] text-[0.9rem] font-bold tracking-[0.04em] text-muted no-underline hover:bg-surface-soft hover:text-white max-[620px]:px-3";
+    "rounded-full px-4 py-[0.7rem] text-[0.9rem] font-bold tracking-[0.04em] text-muted no-underline hover:bg-surface-soft hover:text-white max-[620px]:px-2 max-[620px]:text-[0.78rem]";
 
   return (
     <header className="sticky top-0 z-10 px-4 flex w-full items-center justify-between gap-8 border-b border-white/[0.14] bg-brand-black/85 py-5 backdrop-blur-2xl max-[620px]:py-[0.9rem]">
-      <div className="mx-auto flex w-full max-w-[1180px] items-center justify-between gap-8">
+      <div className="mx-auto flex w-full max-w-[1180px] items-center justify-between gap-8 max-[620px]:gap-2">
         <Logo />
         <nav className="flex items-center gap-[0.35rem]" aria-label="Navegação principal">
           <Link
@@ -27,12 +27,22 @@ export function SiteHeader({ active }: { active: PublicRoute }) {
           <Link
             className={joinClasses(
               linkClasses,
-              active === "mensagem" && "bg-surface-soft text-white",
+              active === "palavra" && "bg-surface-soft text-white",
             )}
-            aria-current={active === "mensagem" ? "page" : undefined}
+            aria-current={active === "palavra" ? "page" : undefined}
+            href="/palavra"
+          >
+            Palavra
+          </Link>
+          <Link
+            className={joinClasses(
+              linkClasses,
+              active === "missao" && "bg-surface-soft text-white",
+            )}
+            aria-current={active === "missao" ? "page" : undefined}
             href="/mensagem"
           >
-            Mensagem
+            Missão
           </Link>
         </nav>
       </div>
