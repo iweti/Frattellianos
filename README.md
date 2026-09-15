@@ -56,20 +56,20 @@ npm run start
 
 ## Scripts
 
-| Comando | Descrição |
-| --- | --- |
-| `npm run dev` | Inicia ambiente de desenvolvimento |
-| `npm run build` | Gera build otimizado de produção |
+| Comando         | Descrição                             |
+| --------------- | ------------------------------------- |
+| `npm run dev`   | Inicia ambiente de desenvolvimento    |
+| `npm run build` | Gera build otimizado de produção      |
 | `npm run start` | Inicia servidor com build de produção |
 
 ## Rotas
 
-| Rota | Estado | Descrição |
-| --- | --- | --- |
-| `/` | Disponível | História e apresentação do Frattellianos |
-| `/mensagem` | Disponível | Missão, visão e valores da comunidade |
-| `/palavra` | Disponível | Blog local com mensagens e versículos diários |
-| `/login` | Preparação | Entrada reservada para autenticação futura |
+| Rota        | Estado     | Descrição                                     |
+| ----------- | ---------- | --------------------------------------------- |
+| `/`         | Disponível | História e apresentação do Frattellianos      |
+| `/mensagem` | Disponível | Missão, visão e valores da comunidade         |
+| `/palavra`  | Disponível | Blog local com mensagens e versículos diários |
+| `/login`    | Preparação | Entrada reservada para autenticação futura    |
 
 ## Estrutura
 

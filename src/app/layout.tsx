@@ -15,9 +15,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="pt-BR" className="scroll-smooth scheme-dark motion-reduce:scroll-auto">
+    <html
+      lang="pt-BR"
+      className="scroll-smooth scheme-dark motion-reduce:scroll-auto"
+    >
       <body className="min-h-screen bg-brand-black bg-[radial-gradient(circle_at_80%_8%,rgba(227,49,44,0.14),transparent_28rem)] font-sans text-white">
         {children}
       </body>

@@ -16,7 +16,8 @@ export default function LoginPage() {
           Acesso em preparação.
         </h1>
         <p className="mb-4 text-base leading-7 text-[#5f6268]">
-          Este espaço será ativado quando autenticação e usuários forem definidos.
+          Este espaço será ativado quando autenticação e usuários forem
+          definidos.
         </p>
         <Link
           className="inline-flex items-center gap-[0.65rem] font-extrabold text-brand-red no-underline hover:text-[#ff4b46]"

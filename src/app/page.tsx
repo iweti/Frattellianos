@@ -33,7 +33,7 @@ export default function Home() {
 
       <main className="overflow-hidden">
         <section
-          className="mx-auto grid min-h-[calc(100vh_-_82px)] w-[calc(100%_-_2rem)] max-w-[1180px] items-center gap-[clamp(2rem,6vw,6rem)] py-20 max-[900px]:min-h-0 max-[900px]:grid-cols-1 max-[900px]:pt-16 max-[620px]:py-14 min-[901px]:grid-cols-[minmax(0,1.04fr)_minmax(360px,0.96fr)]"
+          className="mx-auto grid min-h-[calc(100vh-82px)] w-[calc(100%-2rem)] max-w-[1180px] items-center gap-[clamp(2rem,6vw,6rem)] py-20 max-[900px]:min-h-0 max-[900px]:grid-cols-1 max-[900px]:pt-16 max-[620px]:py-14 min-[901px]:grid-cols-[minmax(0,1.04fr)_minmax(360px,0.96fr)]"
           aria-labelledby="hero-title"
         >
           <div>
@@ -45,13 +45,16 @@ export default function Home() {
               Uma família unida aos pés da cruz.
             </h1>
             <p className="mb-8 max-w-2xl text-[clamp(1rem,1.5vw,1.2rem)] leading-7 text-[#c7c9ce]">
-              Frattellianos nasceu de um sonho entre amigos e encontrou propósito na missão de
-              aproximar pessoas de Cristo por meio de mensagens simples, verdadeiras e cheias de
-              amor.
+              Frattellianos nasceu de um sonho entre amigos e encontrou
+              propósito na missão de aproximar pessoas de Cristo por meio de
+              mensagens simples, verdadeiras e cheias de amor.
             </p>
             <div className="flex flex-wrap gap-[0.85rem] max-[620px]:w-full">
               <a
-                className={joinClasses(buttonClasses, "bg-brand-red text-white hover:bg-[#ef3b36]")}
+                className={joinClasses(
+                  buttonClasses,
+                  "bg-brand-red text-white hover:bg-[#ef3b36]",
+                )}
                 href="#historia"
               >
                 Conheça a história
@@ -76,14 +79,14 @@ export default function Home() {
             />
           </figure>
         </section>
-
+        1
         <section
           className="grid scroll-mt-20 gap-[clamp(3rem,8vw,8rem)] bg-white px-[max(1rem,calc((100vw_-_1180px)/2))] py-[clamp(5rem,10vw,9rem)] text-brand-black max-[900px]:grid-cols-1 min-[901px]:grid-cols-[minmax(0,0.78fr)_minmax(0,1.22fr)]"
           id="historia"
           aria-labelledby="story-title"
         >
           <div className="self-start min-[901px]:sticky min-[901px]:top-32">
-            <Eyebrow>A história</Eyebrow>
+            <Eyebrow>A história de</Eyebrow>
             <h2
               className="mb-[1.4rem] text-balance font-serif text-[clamp(2.2rem,5vw,4.6rem)] leading-[1.02] font-normal tracking-[-0.045em]"
               id="story-title"
@@ -91,8 +94,9 @@ export default function Home() {
               Um sonho antigo ganhou novo significado.
             </h2>
             <p className="text-base leading-7 text-[#5f6268]">
-              No princípio, Frattellianos seria uma marca de comunicação. Com o tempo, tornou-se
-              testemunho, comunidade e convite para caminhar junto.
+              No princípio, Frattellianos seria uma marca de comunicação. Com o
+              tempo, tornou-se testemunho, comunidade e convite para caminhar
+              junto.
             </p>
           </div>
 
@@ -115,7 +119,6 @@ export default function Home() {
             ))}
           </ol>
         </section>
-
         <section
           className="mx-auto w-[calc(100%_-_2rem)] max-w-[920px] py-[clamp(5rem,10vw,9rem)] text-center"
           aria-labelledby="invitation-title"
@@ -128,8 +131,8 @@ export default function Home() {
             Este caminho também pode ser seu.
           </h2>
           <p className="mx-auto mb-7 max-w-xl text-base leading-7 text-muted">
-            Frattellianos segue construindo uma comunidade em que cada palavra, gesto e encontro
-            apontam para Cristo.
+            Frattellianos segue construindo uma comunidade em que cada palavra,
+            gesto e encontro apontam para Cristo.
           </p>
           <Link
             className="inline-flex items-center gap-[0.65rem] font-extrabold text-brand-red no-underline hover:text-[#ff4b46]"

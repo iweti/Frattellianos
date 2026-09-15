@@ -6,7 +6,8 @@ import { MessageFeed } from "@/components/message-feed";
 
 export const metadata: Metadata = {
   title: "Palavra",
-  description: "Versículos e mensagens compartilhados pela comunidade Frattellianos.",
+  description:
+    "Versículos e mensagens compartilhados pela comunidade Frattellianos.",
 };
 
 export default function WordPage() {
@@ -29,7 +30,8 @@ export default function WordPage() {
             Palavra
           </h1>
           <p className="mb-10 max-w-2xl text-[clamp(1rem,1.5vw,1.15rem)] leading-7 text-[#c7c9ce]">
-            Compartilhe uma palavra e acompanhe o versículo escolhido para cada novo dia.
+            Compartilhe uma palavra e acompanhe o versículo escolhido para cada
+            novo dia.
           </p>
           <MessageFeed />
         </section>

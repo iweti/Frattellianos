@@ -42,8 +42,9 @@ export default function MessagePage() {
             Falar de Cristo de um jeito que todos entendam.
           </h1>
           <p className="mx-auto mb-8 max-w-2xl text-[clamp(1rem,1.5vw,1.2rem)] leading-7 text-[#c7c9ce]">
-            Jesus ensinava com simplicidade e alcançava pessoas de todas as idades. É essa clareza,
-            próxima e sem julgamentos, que Frattellianos deseja levar adiante.
+            Jesus ensinava com simplicidade e alcançava pessoas de todas as
+            idades. É essa clareza, próxima e sem julgamentos, que Frattellianos
+            deseja levar adiante.
           </p>
         </section>
 
@@ -62,7 +63,9 @@ export default function MessagePage() {
               <h2 className="mt-auto mb-4 text-balance font-serif text-[clamp(2rem,4vw,3.2rem)] font-normal">
                 {pillar.title}
               </h2>
-              <p className="mb-0 text-base leading-7 text-muted">{pillar.text}</p>
+              <p className="mb-0 text-base leading-7 text-muted">
+                {pillar.text}
+              </p>
             </article>
           ))}
         </section>

@@ -13,7 +13,10 @@ export function SiteHeader({ active }: { active: PublicRoute }) {
     <header className="sticky top-0 z-10 px-4 flex w-full items-center justify-between gap-8 border-b border-white/[0.14] bg-brand-black/85 py-5 backdrop-blur-2xl max-[620px]:py-[0.9rem]">
       <div className="mx-auto flex w-full max-w-[1180px] items-center justify-between gap-8 max-[620px]:gap-2">
         <Logo />
-        <nav className="flex items-center gap-[0.35rem]" aria-label="Navegação principal">
+        <nav
+          className="flex items-center gap-[0.35rem]"
+          aria-label="Navegação principal"
+        >
           <Link
             className={joinClasses(
               linkClasses,
@@ -27,22 +30,22 @@ export function SiteHeader({ active }: { active: PublicRoute }) {
           <Link
             className={joinClasses(
               linkClasses,
-              active === "palavra" && "bg-surface-soft text-white",
-            )}
-            aria-current={active === "palavra" ? "page" : undefined}
-            href="/palavra"
-          >
-            Palavra
-          </Link>
-          <Link
-            className={joinClasses(
-              linkClasses,
               active === "missao" && "bg-surface-soft text-white",
             )}
             aria-current={active === "missao" ? "page" : undefined}
             href="/mensagem"
           >
             Missão
+          </Link>
+          <Link
+            className={joinClasses(
+              linkClasses,
+              active === "palavra" && "bg-surface-soft text-white",
+            )}
+            aria-current={active === "palavra" ? "page" : undefined}
+            href="/palavra"
+          >
+            Palavra
           </Link>
         </nav>
       </div>

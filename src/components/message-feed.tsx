@@ -89,7 +89,8 @@ function DailyCard({ entry }: { entry: DailyFeedEntry }) {
         <BrandAvatar />
         <div className="min-w-0">
           <p className="m-0 text-sm text-muted">
-            <strong className="font-bold text-white">Frattellianos</strong> publicou uma mensagem
+            <strong className="font-bold text-white">Frattellianos</strong>{" "}
+            publicou uma mensagem
           </p>
           <time className="text-xs text-muted" dateTime={entry.dateKey}>
             {dateFormatter.format(date)}
@@ -125,7 +126,8 @@ function LocalCard({ message }: { message: LocalMessage }) {
         </span>
         <div>
           <p className="m-0 text-sm text-muted">
-            <strong className="font-bold text-white">Você</strong> publicou uma mensagem local
+            <strong className="font-bold text-white">Você</strong> publicou uma
+            mensagem local
           </p>
           <time className="text-xs text-muted" dateTime={message.createdAt}>
             {dateTimeFormatter.format(new Date(message.createdAt))}
@@ -166,7 +168,9 @@ export function MessageFeed() {
       sortValue: Date.parse(entry.createdAt),
     }));
 
-    return [...dailyItems, ...localItems].sort((a, b) => b.sortValue - a.sortValue);
+    return [...dailyItems, ...localItems].sort(
+      (a, b) => b.sortValue - a.sortValue,
+    );
   }, [localMessages, now]);
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -175,7 +179,10 @@ export function MessageFeed() {
     if (!text) return;
 
     const message: LocalMessage = {
-      id: typeof crypto.randomUUID === "function" ? crypto.randomUUID() : String(Date.now()),
+      id:
+        typeof crypto.randomUUID === "function"
+          ? crypto.randomUUID()
+          : String(Date.now()),
       text,
       createdAt: new Date().toISOString(),
     };
@@ -205,7 +212,9 @@ export function MessageFeed() {
           value={draft}
         />
         <div className="flex items-center justify-between gap-4 border-t border-white/[0.1] px-4 py-3">
-          <span className="text-xs text-muted">Salva apenas neste navegador</span>
+          <span className="text-xs text-muted">
+            Salva apenas neste navegador
+          </span>
           <button
             className="inline-flex min-h-10 items-center justify-center rounded-md bg-brand-red px-5 text-sm font-extrabold text-white transition-colors hover:bg-[#ef3b36] disabled:cursor-not-allowed disabled:opacity-40"
             disabled={!draft.trim()}
@@ -217,8 +226,12 @@ export function MessageFeed() {
       </form>
 
       <div className="mb-5 flex items-end justify-between gap-4">
-        <h2 className="font-serif text-[clamp(1.7rem,4vw,2.4rem)] font-normal">Publicações</h2>
-        <p className="m-0 text-sm text-muted">Uma nova mensagem todos os dias</p>
+        <h2 className="font-serif text-[clamp(1.7rem,4vw,2.4rem)] font-normal">
+          Publicações
+        </h2>
+        <p className="m-0 text-sm text-muted">
+          Uma nova mensagem todos os dias
+        </p>
       </div>
 
       <div className="grid gap-5" aria-live="polite">
