@@ -1,6 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
 
-import { Logo } from "@/components/ui/logo";
 import { joinClasses } from "@/lib/utils";
 
 type PublicRoute = "historia" | "palavra" | "missao";
@@ -12,7 +12,20 @@ export function SiteHeader({ active }: { active: PublicRoute }) {
   return (
     <header className="sticky top-0 z-10 px-4 flex w-full items-center justify-between gap-8 border-b border-white/[0.14] bg-brand-black/85 py-5 backdrop-blur-2xl max-[620px]:py-[0.9rem]">
       <div className="mx-auto flex w-full max-w-295 items-center justify-between gap-8 max-[620px]:gap-2">
-        <Logo />
+        <Link
+          className="shrink-0 no-underline"
+          href="/"
+          aria-label="Frattellianos — página inicial"
+        >
+          <Image
+            className="block h-16 w-auto max-w-40 object-contain max-[620px]:h-12 max-[620px]:max-w-28"
+            src="/images/logo-frattellianos.svg"
+            width={1733}
+            height={1057}
+            alt="Frattellianos"
+            priority
+          />
+        </Link>
         <nav
           className="flex items-center gap-[0.35rem]"
           aria-label="Navegação principal"
