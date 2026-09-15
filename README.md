@@ -10,7 +10,7 @@ Site institucional da comunidade cristã Frattellianos, criado para apresentar s
 
 Frattellianos nasceu de um sonho entre amigos e ganhou novo significado com a missão de aproximar pessoas de Cristo. O site reúne essa trajetória e apresenta missão, visão e valores da comunidade.
 
-Atualmente, experiência institucional está pronta. Login, dashboard, persistência e gerenciamento de usuários permanecem como estruturas preparadas para desenvolvimento futuro.
+Atualmente, a experiência institucional está pronta. O login permanece como preparação para autenticação futura; as pastas de API e dashboard estão reservadas, mas ainda não possuem implementação.
 
 ## Tecnologias
 
@@ -69,10 +69,6 @@ npm run start
 | `/` | Disponível | História e apresentação do Frattellianos |
 | `/mensagem` | Disponível | Missão, visão e valores da comunidade |
 | `/login` | Preparação | Entrada reservada para autenticação futura |
-| `/dashboard` | Preparação | Base da área administrativa |
-| `/dashboard/users` | Preparação | Base do gerenciamento de usuários |
-| `/dashboard/settings` | Preparação | Base das configurações administrativas |
-| `/api/users` | Preparação | Endpoint `GET` com fonte de dados ainda não persistida |
 
 ## Estrutura
 
@@ -82,12 +78,9 @@ Frattellianos/
 │   ├── icons/
 │   └── images/
 ├── src/
-│   ├── app/          # páginas, layouts e rotas da API
+│   ├── app/          # páginas e pastas reservadas para API e dashboard
 │   ├── components/   # componentes visuais e de layout
-│   ├── hooks/        # hooks React
-│   ├── lib/          # utilitários e integrações internas
-│   ├── services/     # regras de acesso aos dados
-│   └── types/        # tipos compartilhados
+│   └── lib/          # utilitários internos
 ├── package.json
 └── postcss.config.mjs
 ```
@@ -96,5 +89,5 @@ Frattellianos/
 
 - Páginas institucionais responsivas implementadas.
 - Identidade visual e estilos construídos com Tailwind CSS.
-- API de usuários retorna lista vazia enquanto persistência não for definida.
-- Login e dashboard não possuem autenticação ou dados reais.
+- Login ainda não possui autenticação.
+- Backend e dashboard ainda não estão implementados.

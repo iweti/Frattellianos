@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Logo({ compact = false }: { compact?: boolean }) {
   return (
@@ -7,9 +8,11 @@ export function Logo({ compact = false }: { compact?: boolean }) {
       href="/"
       aria-label="Frattellianos — página inicial"
     >
-      <img
-        className="block size-[2.6rem] object-cover"
-        src="/icons/frattellianos-mark.png"
+      <Image
+        className="block size-16 object-contain"
+        src="/icons/frattellianos-mark-white.png"
+        width={512}
+        height={512}
         alt=""
       />
       {!compact && <span className="max-[620px]:hidden">Frattellianos</span>}
