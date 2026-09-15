@@ -102,7 +102,7 @@ export default function Home() {
                 className="grid grid-cols-[3rem_1fr] gap-5 border-t border-brand-black/20 py-8 last:border-b max-[620px]:grid-cols-1"
                 key={chapter.number}
               >
-                <span className="text-[0.8rem] font-extrabold tracking-[0.14em] text-brand-red">
+                <span className="text-2xl text-xl font-extrabold tracking-[0.14em] text-brand-red">
                   {chapter.number}
                 </span>
                 <div>

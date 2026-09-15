@@ -11,6 +11,7 @@ export function SiteHeader({ active }: { active: PublicRoute }) {
 
   return (
     <header className="sticky top-0 z-10 px-4 flex w-full items-center justify-between gap-8 border-b border-white/[0.14] bg-brand-black/85 py-5 backdrop-blur-2xl max-[620px]:py-[0.9rem]">
+      <div className="mx-auto flex w-full max-w-[1180px] items-center justify-between gap-8">
       <Logo />
       <nav className="flex items-center gap-[0.35rem]" aria-label="Navegação principal">
         <Link
@@ -34,6 +35,8 @@ export function SiteHeader({ active }: { active: PublicRoute }) {
           Mensagem
         </Link>
       </nav>
+
+      </div>
     </header>
   );
 }
