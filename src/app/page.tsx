@@ -25,7 +25,7 @@ const chapters = [
 
 export default function Home() {
   const buttonClasses =
-    "inline-flex min-h-[3.15rem] items-center justify-center rounded-[0.2rem] border border-transparent px-5 py-[0.85rem] text-[0.9rem] font-extrabold tracking-[0.04em] no-underline max-[620px]:w-full";
+    "inline-flex min-h-[3.15rem] items-center justify-center rounded-[0.75rem] border border-transparent px-5 py-[0.85rem] text-[0.9rem] font-extrabold tracking-[0.04em] no-underline max-[620px]:w-full";
 
   return (
     <>
@@ -88,7 +88,7 @@ export default function Home() {
           <div className="self-start min-[901px]:sticky min-[901px]:top-32">
             <Eyebrow>A história de</Eyebrow>
             <h2
-              className="mb-[1.4rem] text-balance font-serif text-[clamp(2.2rem,5vw,4.6rem)] leading-[1.02] font-normal tracking-[-0.045em]"
+              className="mb-[1.4rem] text-balance font-serif text-[clamp(2.2rem,5vw,4.6rem)] leading-[1.02] font-normal"
               id="story-title"
             >
               Um sonho antigo ganhou novo significado.
@@ -123,19 +123,22 @@ export default function Home() {
           className="mx-auto w-[calc(100%-2rem)] max-w-230 py-[clamp(5rem,10vw,9rem)] text-center"
           aria-labelledby="invitation-title"
         >
-          <Eyebrow>O próximo capítulo</Eyebrow>
           <h2
-            className="mb-[1.4rem] text-balance font-serif text-[clamp(2.2rem,5vw,4.6rem)] leading-[1.02] font-normal tracking-[-0.045em]"
+            className="mb-[1.4rem] text-balance font-serif text-[clamp(2.2rem,5vw,4.6rem)] leading-[1.02] font-normal"
             id="invitation-title"
           >
             Este caminho também pode ser seu.
           </h2>
           <p className="mx-auto mb-7 max-w-xl text-base leading-7 text-muted">
-            Frattellianos segue construindo uma comunidade em que cada palavra,
-            gesto e encontro apontam para Cristo.
+            Frattellianos segue
+            construindo uma comunidade em que cada palavras, gesto e
+            encontre apontem para Cristo.        
           </p>
           <Link
-            className="inline-flex items-center gap-[0.65rem] font-extrabold text-brand-red no-underline hover:text-[#ff4b46]"
+            className={joinClasses(
+              buttonClasses,
+              "inline-flex items-center gap-[0.65rem] font-extrabold bg-brand-red text-white no-underline hover:bg-[#ff4b46]"
+            )}
             href="/mensagem"
           >
             Entenda o que queremos transmitir <span aria-hidden="true">→</span>
