@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
-import { MessageFeed } from "@/components/message-feed";
+import { DailyVerses } from "@/components/daily-verses";
 
 export const metadata: Metadata = {
   title: "Palavra",
@@ -16,7 +16,7 @@ export default function WordPage() {
       <SiteHeader active="palavra" />
 
       <main className="overflow-hidden px-4">
-        <MessageFeed />
+        <DailyVerses />
       </main>
 
       <SiteFooter />

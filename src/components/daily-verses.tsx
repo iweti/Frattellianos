@@ -2,9 +2,12 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-import { createDailyFeed, type DailyFeedEntry } from "@/lib/daily-feed";
+import {
+  createDailyVerseEntries,
+  type DailyVerseEntry,
+} from "@/lib/daily-verse-rotation";
 
-function FeaturedVerse({ entry }: { entry: DailyFeedEntry }) {
+function MainVerse({ entry }: { entry: DailyVerseEntry }) {
   return (
     <blockquote className="m-0 max-w-4xl">
       <p className="mb-8 text-balance font-serif text-[clamp(2rem,5vw,4rem)] leading-[1.15] tracking-tight text-white">
@@ -19,7 +22,7 @@ function FeaturedVerse({ entry }: { entry: DailyFeedEntry }) {
   );
 }
 
-function VerseCard({ entry }: { entry: DailyFeedEntry }) {
+function OtherVerse({ entry }: { entry: DailyVerseEntry }) {
   return (
     <article className="flex h-full rounded-xl border border-white/15 bg-surface shadow-[0_18px_60px_rgba(0,0,0,0.14)]">
       <blockquote className="m-0 flex flex-1 flex-col p-6">
@@ -36,7 +39,7 @@ function VerseCard({ entry }: { entry: DailyFeedEntry }) {
   );
 }
 
-export function MessageFeed() {
+export function DailyVerses() {
   const [now, setNow] = useState<Date | null>(null);
 
   useEffect(() => {
@@ -46,8 +49,11 @@ export function MessageFeed() {
     return () => window.clearInterval(timer);
   }, []);
 
-  const entries = useMemo(() => (now ? createDailyFeed(now) : []), [now]);
-  const featuredEntry = entries.find((entry) => entry.isToday);
+  const entries = useMemo(
+    () => (now ? createDailyVerseEntries(now) : []),
+    [now],
+  );
+  const mainEntry = entries.find((entry) => entry.isToday);
   const otherEntries = entries.filter((entry) => !entry.isToday);
 
   return (
@@ -64,10 +70,10 @@ export function MessageFeed() {
         </h1>
 
         <div aria-live="polite">
-          {!featuredEntry ? (
+          {!mainEntry ? (
             <div className="h-72 w-[min(56rem,85vw)] animate-pulse rounded-xl bg-surface" />
           ) : (
-            <FeaturedVerse entry={featuredEntry} />
+            <MainVerse entry={mainEntry} />
           )}
         </div>
       </section>
@@ -86,7 +92,7 @@ export function MessageFeed() {
 
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {otherEntries.map((entry) => (
-              <VerseCard entry={entry} key={entry.id} />
+              <OtherVerse entry={entry} key={entry.id} />
             ))}
           </div>
         </section>

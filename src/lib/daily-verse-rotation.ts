@@ -9,7 +9,7 @@ type CalendarDate = {
   day: number;
 };
 
-export type DailyFeedEntry = {
+export type DailyVerseEntry = {
   id: string;
   dateKey: string;
   dayNumber: number;
@@ -48,7 +48,10 @@ function positiveModulo(value: number, divisor: number) {
   return ((value % divisor) + divisor) % divisor;
 }
 
-export function createDailyFeed(now: Date, length = 7): DailyFeedEntry[] {
+export function createDailyVerseEntries(
+  now: Date,
+  length = 7,
+): DailyVerseEntry[] {
   const today = toDayNumber(getBrasiliaDate(now));
 
   return Array.from({ length }, (_, index) => {
