@@ -3,14 +3,12 @@ import Image from "next/image";
 
 export function Logo({
   compact = false,
-  width,
-  height,
   size,
+  preload = false,
 }: {
   compact?: boolean;
-  width: number;
-  height: number;
-  size: string;
+  size: number;
+  preload?: boolean;
 }) {
   return (
     <Link
@@ -19,12 +17,14 @@ export function Logo({
       aria-label="Frattellianos - logo"
     >
       <Image
-        className={`block ${size} object-contain`}
+        className="block object-contain"
         src="/icons/9.png"
-        width={width}
-        height={height}
+        width={2310}
+        height={1410}
+        sizes={`${size}px`}
+        style={{ width: size, height: size }}
         alt="Frattellianos"
-        priority
+        priority 
       />
       {!compact && <span className="max-[620px]:hidden">Frattellianos</span>}
     </Link>

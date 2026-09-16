@@ -107,7 +107,7 @@ export function SiteFooter() {
     <footer className="border-t border-white/15 bg-brand-black px-4 py-12 text-sm text-muted sm:py-16">
       <div className="mx-auto w-full max-w-295">
         <div className="flex flex-col gap-7 sm:flex-row sm:items-center sm:justify-between">
-          <Logo size="size-16" compact={false} width={6310} height={6410} />
+          <Logo size={64} compact={false} />
           <nav className="flex items-center gap-3" aria-label="Redes sociais">
             <a
               className={socialLinkClasses}
