@@ -1,12 +1,22 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export function Logo({ compact = false, width, height, size }: { compact?: boolean; width: number; height: number; size: string }) {
+export function Logo({
+  compact = false,
+  width,
+  height,
+  size,
+}: {
+  compact?: boolean;
+  width: number;
+  height: number;
+  size: string;
+}) {
   return (
     <Link
       className="inline-flex items-center gap-3 font-serif text-[1.1rem] text-white italic no-underline"
-      href="/"
-      aria-label="Frattellianos — página inicial"
+      href="/historia"
+      aria-label="Frattellianos - logo"
     >
       <Image
         className={`block ${size} object-contain`}

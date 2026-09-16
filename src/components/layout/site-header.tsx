@@ -13,20 +13,7 @@ export function SiteHeader({ active }: { active: PublicRoute }) {
   return (
     <header className="sticky top-0 z-10 px-4 flex w-full items-center justify-between gap-8 border-b border-white/[0.14] bg-brand-black/85 backdrop-blur-2xl max-[620px]:py-[0.9rem]">
       <div className="mx-auto flex w-full max-w-295 items-center justify-between gap-8 max-[620px]:gap-2">
-        <Link
-          className="shrink-0 no-underline"
-          href="/"
-          aria-label="Frattellianos — página inicial"
-        >
-          <div className="flex items-center gap-2">
-            <Logo
-              compact={false}
-              width={2310}
-              height={1410}
-              size="size-22"
-            />
-          </div>
-        </Link>
+        <Logo compact={false} width={2310} height={1410} size="size-22" />
         <nav
           className="flex items-center gap-[0.35rem]"
           aria-label="Navegação principal"
@@ -37,7 +24,7 @@ export function SiteHeader({ active }: { active: PublicRoute }) {
               active === "historia" && "bg-surface-soft text-white",
             )}
             aria-current={active === "historia" ? "page" : undefined}
-            href="/"
+            href="/historia"
           >
             História
           </Link>

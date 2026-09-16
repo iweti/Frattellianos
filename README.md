@@ -1,8 +1,6 @@
 # Frattellianos
 
-<p align="center">
-  <img src="public/images/logo-frattellianos.svg" alt="Logo Frattellianos" width="520">
-</p>
+![Logo Frattellianos](public/images/logo-frattellianos.svg)
 
 Site institucional da comunidade cristã Frattellianos, criado para apresentar sua história, propósito e mensagem de forma simples, acolhedora e responsiva.
 
