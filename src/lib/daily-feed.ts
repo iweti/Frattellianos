@@ -25,7 +25,9 @@ function getBrasiliaDate(date: Date): CalendarDate {
     day: "2-digit",
   }).formatToParts(date);
 
-  const values = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  const values = Object.fromEntries(
+    parts.map((part) => [part.type, part.value]),
+  );
 
   return {
     year: Number(values.year),
@@ -51,7 +53,10 @@ export function createDailyFeed(now: Date, length = 7): DailyFeedEntry[] {
 
   return Array.from({ length }, (_, index) => {
     const dayNumber = today - index;
-    const verseIndex = positiveModulo(dayNumber - rotationStartDay, dailyVerses.length);
+    const verseIndex = positiveModulo(
+      dayNumber - rotationStartDay,
+      dailyVerses.length,
+    );
     const verse = dailyVerses[verseIndex];
     const dateKey = toDateKey(dayNumber);
 

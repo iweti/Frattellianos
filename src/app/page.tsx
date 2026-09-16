@@ -25,7 +25,7 @@ const chapters = [
 
 export default function Home() {
   const buttonClasses =
-    "inline-flex min-h-[3.15rem] items-center justify-center rounded-[0.2rem] border border-transparent px-5 py-[0.85rem] text-[0.9rem] font-extrabold tracking-[0.04em] no-underline max-[620px]:w-full";
+    "inline-flex min-h-[3.15rem] items-center justify-center rounded-[0.75rem] border border-transparent px-5 py-[0.85rem] text-[0.9rem] font-extrabold tracking-[0.04em] no-underline max-[620px]:w-full";
 
   return (
     <>
@@ -33,11 +33,13 @@ export default function Home() {
 
       <main className="overflow-hidden">
         <section
-          className="mx-auto grid min-h-[calc(100vh_-_82px)] w-[calc(100%_-_2rem)] max-w-[1180px] items-center gap-[clamp(2rem,6vw,6rem)] py-20 max-[900px]:min-h-0 max-[900px]:grid-cols-1 max-[900px]:pt-16 max-[620px]:py-14 min-[901px]:grid-cols-[minmax(0,1.04fr)_minmax(360px,0.96fr)]"
+          className="mx-auto grid min-h-[calc(100vh-82px)] w-[calc(100%-2rem)] max-w-295 items-center gap-[clamp(2rem,6vw,6rem)] py-20 max-[900px]:min-h-0 max-[900px]:grid-cols-1 max-[900px]:pt-16 max-[620px]:py-14 min-[901px]:grid-cols-[minmax(0,1.04fr)_minmax(360px,0.96fr)]"
           aria-labelledby="hero-title"
         >
           <div>
-            <Eyebrow>Uma história de fé e reencontro</Eyebrow>
+            <div className="[&>p]:text-sm!">
+              <Eyebrow>Uma história de fé e reencontro</Eyebrow>
+            </div>
             <h1
               className="mb-6 text-balance font-serif text-[clamp(3rem,7vw,6.8rem)] leading-[0.94] font-normal tracking-[-0.055em] after:mt-[0.2em] after:block after:h-[0.08em] after:w-[0.8em] after:bg-brand-red after:content-['']"
               id="hero-title"
@@ -45,13 +47,16 @@ export default function Home() {
               Uma família unida aos pés da cruz.
             </h1>
             <p className="mb-8 max-w-2xl text-[clamp(1rem,1.5vw,1.2rem)] leading-7 text-[#c7c9ce]">
-              Frattellianos nasceu de um sonho entre amigos e encontrou propósito na missão de
-              aproximar pessoas de Cristo por meio de mensagens simples, verdadeiras e cheias de
-              amor.
+              Frattellianos nasceu de um sonho entre amigos e encontrou
+              propósito na missão de aproximar pessoas de Cristo por meio de
+              mensagens simples, verdadeiras e cheias de amor.
             </p>
             <div className="flex flex-wrap gap-[0.85rem] max-[620px]:w-full">
               <a
-                className={joinClasses(buttonClasses, "bg-brand-red text-white hover:bg-[#ef3b36]")}
+                className={joinClasses(
+                  buttonClasses,
+                  "bg-brand-red text-white hover:bg-[#ef3b36]",
+                )}
                 href="#historia"
               >
                 Conheça a história
@@ -68,31 +73,31 @@ export default function Home() {
             </div>
           </div>
 
-          <figure className="relative m-0 border border-brand-red/35 bg-[linear-gradient(145deg,rgba(227,49,44,0.35),rgba(255,255,255,0.03))] p-3 before:absolute before:-z-10 before:inset-[15%_-8%_-8%_20%] before:bg-brand-red before:opacity-[0.18] before:blur-[70px] before:content-[''] max-[900px]:max-w-[680px]">
+          <figure className="relative isolate m-0 flex aspect-5/3 items-center justify-center p-6 before:absolute before:top-1/2 before:left-1/2 before:size-102 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-brand-red/10 before:blur-3xl before:content-[''] max-[900px]:max-w-170 max-[620px]:before:size-56">
             <img
-              className="block aspect-[1.64] w-full object-cover"
-              src="/images/logo-frattellianos.svg"
-              alt="Símbolo Frattellianos: uma pessoa ajoelhada aos pés da cruz"
+              className="relative z-10 block h-4/5 max-h-100 w-auto max-w-4/5 object-contain drop-shadow-[0_0_28px_rgba(255,255,255,0.14)]"
+              src="/icons/9.png"
+              alt="Símbolo Frattellianos com uma pessoa ajoelhada aos pés da cruz"
             />
           </figure>
         </section>
-
         <section
-          className="grid scroll-mt-20 gap-[clamp(3rem,8vw,8rem)] bg-white px-[max(1rem,calc((100vw_-_1180px)/2))] py-[clamp(5rem,10vw,9rem)] text-brand-black max-[900px]:grid-cols-1 min-[901px]:grid-cols-[minmax(0,0.78fr)_minmax(0,1.22fr)]"
+          className="grid scroll-mt-20 gap-[clamp(3rem,8vw,8rem)] bg-white px-[max(1rem,calc((100vw-1180px)/2))] py-[clamp(5rem,10vw,9rem)] text-brand-black max-[900px]:grid-cols-1 min-[901px]:grid-cols-[minmax(0,0.78fr)_minmax(0,1.22fr)]"
           id="historia"
           aria-labelledby="story-title"
         >
           <div className="self-start min-[901px]:sticky min-[901px]:top-32">
-            <Eyebrow>A história</Eyebrow>
+            <Eyebrow>A história de</Eyebrow>
             <h2
-              className="mb-[1.4rem] text-balance font-serif text-[clamp(2.2rem,5vw,4.6rem)] leading-[1.02] font-normal tracking-[-0.045em]"
+              className="mb-[1.4rem] text-balance font-serif text-[clamp(2.2rem,5vw,4.6rem)] leading-[1.02] font-normal"
               id="story-title"
             >
-              Um sonho antigo ganhou novo significado.
+              Um sonho antigo que ganhou um novo significado.
             </h2>
             <p className="text-base leading-7 text-[#5f6268]">
-              No princípio, Frattellianos seria uma marca de comunicação. Com o tempo, tornou-se
-              testemunho, comunidade e convite para caminhar junto.
+              No princípio, Frattellianos seria uma marca de comunicação. Com o
+              tempo, tornou-se testemunho, comunidade e convite para caminhar
+              junto.
             </p>
           </div>
 
@@ -102,7 +107,7 @@ export default function Home() {
                 className="grid grid-cols-[3rem_1fr] gap-5 border-t border-brand-black/20 py-8 last:border-b max-[620px]:grid-cols-1"
                 key={chapter.number}
               >
-                <span className="text-2xl text-xl font-extrabold tracking-[0.14em] text-brand-red">
+                <span className="text-2xl font-extrabold tracking-[0.14em] text-brand-red">
                   {chapter.number}
                 </span>
                 <div>
@@ -115,24 +120,25 @@ export default function Home() {
             ))}
           </ol>
         </section>
-
         <section
-          className="mx-auto w-[calc(100%_-_2rem)] max-w-[920px] py-[clamp(5rem,10vw,9rem)] text-center"
+          className="mx-auto w-[calc(100%-2rem)] max-w-230 py-[clamp(5rem,10vw,9rem)] text-center"
           aria-labelledby="invitation-title"
         >
-          <Eyebrow>O próximo capítulo</Eyebrow>
           <h2
-            className="mb-[1.4rem] text-balance font-serif text-[clamp(2.2rem,5vw,4.6rem)] leading-[1.02] font-normal tracking-[-0.045em]"
+            className="mb-[1.4rem] text-balance font-serif text-[clamp(2.2rem,5vw,4.6rem)] leading-[1.02] font-normal"
             id="invitation-title"
           >
             Este caminho também pode ser seu.
           </h2>
           <p className="mx-auto mb-7 max-w-xl text-base leading-7 text-muted">
-            Frattellianos segue construindo uma comunidade em que cada palavra, gesto e encontro
-            apontam para Cristo.
+            Frattellianos segue construindo uma comunidade em que cada palavras,
+            gesto e encontre apontem para Cristo.
           </p>
           <Link
-            className="inline-flex items-center gap-[0.65rem] font-extrabold text-brand-red no-underline hover:text-[#ff4b46]"
+            className={joinClasses(
+              buttonClasses,
+              "inline-flex items-center gap-[0.65rem] font-extrabold bg-brand-red text-white no-underline hover:bg-[#ff4b46]",
+            )}
             href="/mensagem"
           >
             Entenda o que queremos transmitir <span aria-hidden="true">→</span>
