@@ -1,7 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 
-import { Logo } from "@/components/ui/logo";
 import { joinClasses } from "@/lib/utils";
+import { Logo } from "@/components/ui/logo";
 
 type PublicRoute = "historia" | "palavra" | "missao";
 
@@ -10,9 +11,22 @@ export function SiteHeader({ active }: { active: PublicRoute }) {
     "rounded-full px-4 py-[0.7rem] text-[0.9rem] font-bold tracking-[0.04em] text-muted no-underline hover:bg-surface-soft hover:text-white max-[620px]:px-2 max-[620px]:text-[0.78rem]";
 
   return (
-    <header className="sticky top-0 z-10 px-4 flex w-full items-center justify-between gap-8 border-b border-white/[0.14] bg-brand-black/85 py-5 backdrop-blur-2xl max-[620px]:py-[0.9rem]">
+    <header className="sticky top-0 z-10 px-4 flex w-full items-center justify-between gap-8 border-b border-white/[0.14] bg-brand-black/85 backdrop-blur-2xl max-[620px]:py-[0.9rem]">
       <div className="mx-auto flex w-full max-w-295 items-center justify-between gap-8 max-[620px]:gap-2">
-        <Logo />
+        <Link
+          className="shrink-0 no-underline"
+          href="/"
+          aria-label="Frattellianos — página inicial"
+        >
+          <div className="flex items-center gap-2">
+            <Logo
+              compact={false}
+              width={2310}
+              height={1410}
+              size="size-22"
+            />
+          </div>
+        </Link>
         <nav
           className="flex items-center gap-[0.35rem]"
           aria-label="Navegação principal"

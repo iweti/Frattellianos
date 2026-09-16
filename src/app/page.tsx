@@ -37,7 +37,9 @@ export default function Home() {
           aria-labelledby="hero-title"
         >
           <div>
-            <Eyebrow>Uma história de fé e reencontro</Eyebrow>
+            <div className="[&>p]:text-sm!">
+              <Eyebrow>Uma história de fé e reencontro</Eyebrow>
+            </div>
             <h1
               className="mb-6 text-balance font-serif text-[clamp(3rem,7vw,6.8rem)] leading-[0.94] font-normal tracking-[-0.055em] after:mt-[0.2em] after:block after:h-[0.08em] after:w-[0.8em] after:bg-brand-red after:content-['']"
               id="hero-title"
@@ -71,15 +73,14 @@ export default function Home() {
             </div>
           </div>
 
-          <figure className="relative m-0 border border-brand-red/35 bg-[linear-gradient(145deg,rgba(227,49,44,0.35),rgba(255,255,255,0.03))] p-3 before:absolute before:-z-10 before:inset-[15%_-8%_-8%_20%] before:bg-brand-red before:opacity-[0.18] before:blur-[70px] before:content-[''] max-[900px]:max-w-170">
+          <figure className="relative isolate m-0 flex aspect-5/3 items-center justify-center p-6 before:absolute before:top-1/2 before:left-1/2 before:size-102 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-brand-red/10 before:blur-3xl before:content-[''] max-[900px]:max-w-170 max-[620px]:before:size-56">
             <img
-              className="block aspect-[1.64] w-full object-cover"
-              src="/images/logo-frattellianos.svg"
-              alt="Símbolo Frattellianos: uma pessoa ajoelhada aos pés da cruz"
+              className="relative z-10 block h-4/5 max-h-100 w-auto max-w-4/5 object-contain drop-shadow-[0_0_28px_rgba(255,255,255,0.14)]"
+              src="/icons/9.png"
+              alt="Símbolo Frattellianos com uma pessoa ajoelhada aos pés da cruz"
             />
           </figure>
         </section>
-        1
         <section
           className="grid scroll-mt-20 gap-[clamp(3rem,8vw,8rem)] bg-white px-[max(1rem,calc((100vw-1180px)/2))] py-[clamp(5rem,10vw,9rem)] text-brand-black max-[900px]:grid-cols-1 min-[901px]:grid-cols-[minmax(0,0.78fr)_minmax(0,1.22fr)]"
           id="historia"
@@ -91,7 +92,7 @@ export default function Home() {
               className="mb-[1.4rem] text-balance font-serif text-[clamp(2.2rem,5vw,4.6rem)] leading-[1.02] font-normal"
               id="story-title"
             >
-              Um sonho antigo ganhou novo significado.
+              Um sonho antigo que ganhou um novo significado.
             </h2>
             <p className="text-base leading-7 text-[#5f6268]">
               No princípio, Frattellianos seria uma marca de comunicação. Com o
@@ -130,14 +131,13 @@ export default function Home() {
             Este caminho também pode ser seu.
           </h2>
           <p className="mx-auto mb-7 max-w-xl text-base leading-7 text-muted">
-            Frattellianos segue
-            construindo uma comunidade em que cada palavras, gesto e
-            encontre apontem para Cristo.        
+            Frattellianos segue construindo uma comunidade em que cada palavras,
+            gesto e encontre apontem para Cristo.
           </p>
           <Link
             className={joinClasses(
               buttonClasses,
-              "inline-flex items-center gap-[0.65rem] font-extrabold bg-brand-red text-white no-underline hover:bg-[#ff4b46]"
+              "inline-flex items-center gap-[0.65rem] font-extrabold bg-brand-red text-white no-underline hover:bg-[#ff4b46]",
             )}
             href="/mensagem"
           >

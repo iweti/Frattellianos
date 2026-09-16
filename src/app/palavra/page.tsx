@@ -30,8 +30,8 @@ export default function WordPage() {
             Palavra
           </h1>
           <p className="mb-10 max-w-2xl text-[clamp(1rem,1.5vw,1.15rem)] leading-7 text-[#c7c9ce]">
-            Compartilhe uma palavra e acompanhe o versículo escolhido para cada
-            novo dia.
+            Acompanhe a palavra escolhida para hoje e os versículos dos últimos
+            dias.
           </p>
           <MessageFeed />
         </section>

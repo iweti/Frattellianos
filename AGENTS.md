@@ -7,3 +7,10 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+## Tailwind CSS
+
+- Este projeto usa Tailwind CSS v4. Antes de escrever ou alterar classes, confira a sintaxe compatível com a versão instalada.
+- Prefira a sintaxe canônica sugerida pelo Tailwind CSS IntelliSense: use utilitários nomeados ou frações quando forem equivalentes e deixe valores arbitrários apenas quando não houver alternativa exata.
+- Na sintaxe v4, coloque o modificador `!important` no final do utilitário, por exemplo `text-sm!` e `hover:bg-red-500!`.
+- Antes de concluir uma alteração visual, formate os arquivos modificados com o Prettier e elimine avisos de sintaxe recomendada sem mudar o resultado visual solicitado.
