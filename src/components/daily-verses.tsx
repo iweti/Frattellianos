@@ -1,6 +1,4 @@
-"use client";
-
-import { useEffect, useMemo, useState } from "react";
+import { connection } from "next/server";
 
 import {
   createDailyVerseEntries,
@@ -39,20 +37,10 @@ function OtherVerse({ entry }: { entry: DailyVerseEntry }) {
   );
 }
 
-export function DailyVerses() {
-  const [now, setNow] = useState<Date | null>(null);
+export async function DailyVerses() {
+  await connection();
 
-  useEffect(() => {
-    setNow(new Date());
-
-    const timer = window.setInterval(() => setNow(new Date()), 30_000);
-    return () => window.clearInterval(timer);
-  }, []);
-
-  const entries = useMemo(
-    () => (now ? createDailyVerseEntries(now) : []),
-    [now],
-  );
+  const entries = createDailyVerseEntries(new Date());
   const mainEntry = entries.find((entry) => entry.isToday);
   const otherEntries = entries.filter((entry) => !entry.isToday);
 
@@ -70,11 +58,7 @@ export function DailyVerses() {
         </h1>
 
         <div aria-live="polite">
-          {!mainEntry ? (
-            <div className="h-72 w-[min(56rem,85vw)] animate-pulse rounded-xl bg-surface" />
-          ) : (
-            <MainVerse entry={mainEntry} />
-          )}
+          {mainEntry && <MainVerse entry={mainEntry} />}
         </div>
       </section>
 
