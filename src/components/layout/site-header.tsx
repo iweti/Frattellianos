@@ -4,18 +4,18 @@ import Link from "next/link";
 import { joinClasses } from "@/lib/utils";
 import { Logo } from "@/components/ui/logo";
 
-type PublicRoute = "historia" | "palavra" | "missao";
+type PublicRoute = "historia" | "palavra" | "missao" | "biblia";
 
 export function SiteHeader({ active }: { active: PublicRoute }) {
   const linkClasses =
-    "rounded-full px-4 py-[0.7rem] text-[0.9rem] font-bold tracking-[0.04em] text-muted no-underline hover:bg-surface-soft hover:text-white max-[620px]:px-2 max-[620px]:text-[0.78rem]";
+    "rounded-full px-4 py-[0.7rem] text-[0.9rem] font-bold tracking-[0.04em] text-muted no-underline hover:bg-surface-soft hover:text-white max-[620px]:px-1 max-[620px]:text-[0.7rem] max-[620px]:tracking-normal";
 
   return (
-    <header className="sticky top-0 z-10 px-4 flex w-full items-center justify-between gap-8 border-b border-white/[0.14] bg-brand-black/85 backdrop-blur-2xl max-[620px]:py-[0.9rem]">
-      <div className="mx-auto flex w-full max-w-295 items-center justify-between gap-8 max-[620px]:gap-2">
+    <header className="sticky top-0 z-10 px-4 flex w-full items-center justify-between gap-8 border-b border-white/[0.14] bg-brand-black/85 backdrop-blur-2xl max-[620px]:px-2 max-[620px]:py-[0.9rem]">
+      <div className="mx-auto flex w-full max-w-295 items-center justify-between gap-8 max-[620px]:gap-1">
         <Logo compact={false} size={68} preload />
         <nav
-          className="flex items-center gap-[0.35rem]"
+          className="flex items-center gap-[0.35rem] max-[620px]:gap-0"
           aria-label="Navegação principal"
         >
           <Link
@@ -47,6 +47,16 @@ export function SiteHeader({ active }: { active: PublicRoute }) {
             href="/palavra"
           >
             Palavra
+          </Link>
+          <Link
+            className={joinClasses(
+              linkClasses,
+              active === "biblia" && "bg-surface-soft text-white",
+            )}
+            aria-current={active === "biblia" ? "page" : undefined}
+            href="/biblia"
+          >
+            Bíblia
           </Link>
         </nav>
       </div>

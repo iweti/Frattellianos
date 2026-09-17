@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+/* Tailwind CSS v4 directive; not a standard CSS at-rule. */
+/* stylelint-disable-next-line at-rule-no-unknown */
 @theme {
   --color-brand-red: #e3312c;
   --color-brand-red-dark: #9f1714;

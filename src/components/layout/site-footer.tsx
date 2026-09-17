@@ -162,6 +162,11 @@ export function SiteFooter() {
                   Palavra
                 </Link>
               </li>
+              <li>
+                <Link className={linkClasses} href="/biblia">
+                  Bíblia
+                </Link>
+              </li>
             </ul>
           </nav>
 
