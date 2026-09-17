@@ -111,13 +111,13 @@ export function SiteFooter() {
           <nav className="flex items-center gap-3" aria-label="Redes sociais">
             <a
               className={socialLinkClasses}
-              href="#"
+              href="https://www.instagram.com/frattellianos/"
               aria-label="Instagram — link em breve"
               title="Instagram"
             >
               <InstagramIcon />
             </a>
-            <a
+            {/* <a
               className={socialLinkClasses}
               href="#"
               aria-label="Facebook — link em breve"
@@ -132,7 +132,7 @@ export function SiteFooter() {
               title="YouTube"
             >
               <YoutubeIcon />
-            </a>
+            </a> */}
           </nav>
         </div>
 
@@ -217,6 +217,16 @@ export function SiteFooter() {
               <li>
                 <a
                   className={`${linkClasses} flex items-start gap-3`}
+                  href="https://www.instagram.com/frattellianos/"
+                  aria-label="Instagram — link em breve"
+                >
+                  <InstagramIcon />
+                  <span>Instagram</span>
+                </a>
+              </li>
+              {/* <li>
+                <a
+                  className={`${linkClasses} flex items-start gap-3`}
                   href="#"
                   aria-label="E-mail — link em breve"
                 >
@@ -243,14 +253,16 @@ export function SiteFooter() {
                   <LocationIcon />
                   <span>Localização</span>
                 </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
 
         <div className="mt-11 flex flex-col gap-3 border-t border-white/15 pt-7 text-xs sm:flex-row sm:items-center sm:justify-between">
           <p className="m-0">Fé que aproxima. Amor que serve.</p>
-          <p className="m-0">Frattellianos © {new Date().getFullYear()}</p>
+          <p className="m-0">
+            Frattellianos © {new Date().getFullYear()} · Desenvolvido por IWETI
+          </p>
         </div>
       </div>
     </footer>

@@ -14,9 +14,13 @@ export default function WordPage() {
   return (
     <>
       <SiteHeader active="palavra" />
-
       <main className="overflow-hidden px-4">
-        <DailyVerses />
+        <section
+          className="mx-auto w-full max-w-220 py-"
+          aria-labelledby="word-title"
+        >
+          <DailyVerses />
+        </section>
       </main>
 
       <SiteFooter />
