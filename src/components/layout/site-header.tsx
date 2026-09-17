@@ -8,7 +8,7 @@ type PublicRoute = "historia" | "palavra" | "missao" | "biblia";
 
 export function SiteHeader({ active }: { active: PublicRoute }) {
   const linkClasses =
-    "rounded-full px-4 py-[0.7rem] text-[0.9rem] font-bold tracking-[0.04em] text-muted no-underline hover:bg-surface-soft hover:text-white max-[620px]:px-1 max-[620px]:text-[0.7rem] max-[620px]:tracking-normal";
+    "rounded-full px-4 py-[0.7rem] text-[0.9rem] font-bold tracking-[0.04em] text-muted no-underline hover:bg-surface-soft hover:text-white max-[420px]:text-[0.6rem] max-[620px]:p-2";
 
   return (
     <header className="sticky top-0 z-10 px-4 flex w-full items-center justify-between gap-8 border-b border-white/[0.14] bg-brand-black/85 backdrop-blur-2xl max-[620px]:px-2 max-[620px]:py-[0.9rem]">

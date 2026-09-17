@@ -35,14 +35,16 @@ function FeaturedDailyCard({ entry }: { entry: DailyVerseEntry }) {
   const date = new Date(`${entry.dateKey}T12:00:00.000Z`);
 
   return (
-    <div className="min-h-[calc(100svh-69px)] max-[620px]:min-h-[calc(100svh-98px)]">
-      <p className="mb-0 mt-6 text-sm font-extrabold tracking-[0.18em] text-brand-red uppercase">
-        Fé para todos os dias
-      </p>
-      <p className="mb-5 max-w-2xl text-[clamp(1rem,1.5vw,1.15rem)] leading-7 text-[#c7c9ce]">
-        Acompanhe a palavra escolhida para hoje e os versículos dos últimos
-        dias.
-      </p>
+    <div className="grid min-h-[calc(100svh-69px)] grid-rows-[minmax(min-content,1fr)_auto_minmax(min-content,1fr)] py-6 max-[620px]:min-h-[calc(100svh-98px)]">
+      <div className="self-end pb-5">
+        <p className="mb-0 text-sm font-extrabold tracking-[0.18em] text-brand-red uppercase">
+          Fé para todos os dias
+        </p>
+        <p className="m-0 max-w-2xl text-[clamp(1rem,1.5vw,1.15rem)] leading-7 text-[#c7c9ce]">
+          Acompanhe a palavra escolhida para hoje e os versículos dos últimos
+          dias.
+        </p>
+      </div>
       <article className="overflow-hidden rounded-xl border border-brand-red/70 bg-surface shadow-[0_18px_60px_rgba(0,0,0,0.18)]">
         <header className="flex items-center gap-3 border-b border-white/10 px-5 py-4 max-[620px]:px-4">
           <BrandAvatar />
@@ -71,6 +73,24 @@ function FeaturedDailyCard({ entry }: { entry: DailyVerseEntry }) {
           </footer>
         </blockquote>
       </article>
+      <a
+        className="group inline-flex self-start justify-self-center rounded-full p-2 text-muted/60 transition-colors hover:text-brand-red focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red motion-safe:animate-bounce motion-reduce:animate-none"
+        href="#previous-days-title"
+        aria-label="Ver últimos dias"
+      >
+        <svg
+          className="size-5"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </a>
     </div>
   );
 }
@@ -120,7 +140,7 @@ export async function DailyVerses() {
           <section className="mt-12" aria-labelledby="previous-days-title">
             <div className="mb-5 flex items-end justify-between gap-4">
               <h2
-                className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-normal"
+                className="scroll-mt-24 font-serif text-[clamp(1.5rem,3vw,2rem)] font-normal"
                 id="previous-days-title"
               >
                 Últimos dias
