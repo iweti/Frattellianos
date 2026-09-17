@@ -10,9 +10,6 @@ export const metadata: Metadata = {
   },
   description:
     "Uma comunidade cristã criada para comunicar o evangelho com simplicidade, amor e propósito.",
-  icons: {
-    icon: "/icons/frattellianos-mark.png",
-  },
 };
 
 export default function RootLayout({
