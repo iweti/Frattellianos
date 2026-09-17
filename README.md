@@ -6,9 +6,7 @@ Site institucional da comunidade cristã Frattellianos, criado para apresentar s
 
 ## Sobre o projeto
 
-Frattellianos nasceu de um sonho entre amigos e ganhou novo significado com a missão de aproximar pessoas de Cristo. O site reúne essa trajetória e apresenta missão, visão e valores da comunidade.
-
-Atualmente, a experiência institucional está pronta. O login permanece como preparação para autenticação futura; as pastas de API e dashboard estão reservadas, mas ainda não possuem implementação.
+Frattellianos nasceu de um sonho entre amigos e ganhou novo significado com a missão de aproximar pessoas de Cristo. O site reúne essa trajetória, apresenta missão, visão e valores da comunidade e oferece acesso à Palavra e à estrutura dos livros da Bíblia.
 
 ## Tecnologias
 
@@ -43,14 +41,7 @@ npm run dev
 
 Acesse [http://localhost:3000](http://localhost:3000) no navegador.
 
-Clone por HTTPS não exige chave SSH para repositório público. Caso repositório seja privado, conta usada precisa ter acesso autorizado no GitHub.
-
-Para gerar e executar versão de produção:
-
-```bash
-npm run build
-npm run start
-```
+Clone por HTTPS não exige chave SSH para repositório público.
 
 ## Scripts
 
@@ -62,12 +53,14 @@ npm run start
 
 ## Rotas
 
-| Rota        | Estado     | Descrição                                     |
-| ----------- | ---------- | --------------------------------------------- |
-| `/`         | Disponível | História e apresentação do Frattellianos      |
-| `/mensagem` | Disponível | Missão, visão e valores da comunidade         |
-| `/palavra`  | Disponível | Blog local com mensagens e versículos diários |
-| `/login`    | Preparação | Entrada reservada para autenticação futura    |
+| Rota              | Estado     | Descrição                                   |
+| ----------------- | ---------- | ------------------------------------------- |
+| `/`               | Disponível | Redireciona para página de história         |
+| `/historia`       | Disponível | História e apresentação do Frattellianos    |
+| `/mensagem`       | Disponível | Missão, visão e valores da comunidade       |
+| `/palavra`        | Disponível | Mensagens e versículos diários              |
+| `/biblia`         | Disponível | Lista de livros do Antigo e Novo Testamento |
+| `/biblia/[livro]` | Disponível | Lista de capítulos do livro selecionado     |
 
 ## Estrutura
 
@@ -77,8 +70,9 @@ Frattellianos/
 │   ├── icons/
 │   └── images/
 ├── src/
-│   ├── app/          # páginas e pastas reservadas para API e dashboard
+│   ├── app/          # páginas e layouts da aplicação
 │   ├── components/   # componentes visuais e de layout
+│   ├── content/      # conteúdo bíblico e versículos
 │   └── lib/          # utilitários internos
 ├── package.json
 └── postcss.config.mjs
@@ -87,6 +81,6 @@ Frattellianos/
 ## Estado atual
 
 - Páginas institucionais responsivas implementadas.
+- Navegação por livros e capítulos da Bíblia implementada.
 - Identidade visual e estilos construídos com Tailwind CSS.
-- Login ainda não possui autenticação.
-- Backend e dashboard ainda não estão implementados.
+- Conteúdo bíblico mantido localmente, sem backend.
