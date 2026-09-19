@@ -79,19 +79,21 @@ export default function MessagePage() {
             Isaías 32:1
           </cite>
         </blockquote>
-
         <section
-          className="mx-auto w-[calc(100%-2rem)] max-w-230 pb-[clamp(5rem,10vw,9rem)] text-center"
-          aria-labelledby="manifesto-title"
+          className="mx-auto w-[calc(100%-2rem)] max-w-250 py-[clamp(5rem,12vw,10rem)] pb-[clamp(4rem,8vw,7rem)] text-center"
+          aria-labelledby="message-title "
         >
-          <Eyebrow>Em uma frase</Eyebrow>
-          <h2
-            className="mb-[1.4rem] text-balance font-serif text-[clamp(2.2rem,5vw,4.6rem)] leading-[1.02] font-normal tracking-[-0.045em]"
-            id="manifesto-title"
+          <h1
+            className="mx-auto mb-6 max-w-225 text-balance font-serif text-[clamp(3rem,7vw,6.8rem)] leading-[0.94] font-normal tracking-[-0.055em]"
+            id="message-title"
           >
+            Em uma frase
+          </h1>
+          <p className="mx-auto mb-8 max-w-2xl text-[clamp(1rem,1.5vw,1.2rem)] leading-7 text-[#c7c9ce]">
             Não queremos ser o centro. Queremos apontar o caminho.
-          </h2>
+          </p>
         </section>
+        
       </main>
 
       <SiteFooter />
