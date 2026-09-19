@@ -106,7 +106,7 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-white/15 bg-brand-black px-4 py-12 text-sm text-muted sm:py-16">
       <div className="mx-auto w-full max-w-295">
-        <div className="flex flex-col gap-7 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex gap-7 flex-row justify-between items-center">
           <Logo size={64} compact={false} />
           <nav className="flex items-center gap-3" aria-label="Redes sociais">
             <a
@@ -138,7 +138,7 @@ export function SiteFooter() {
 
         <div className="my-9 h-px bg-white/15 sm:my-11" />
 
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[0.9fr_1fr_1fr_1.4fr] lg:gap-12">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[0.9fr_1fr_1fr] lg:gap-12">
           <nav aria-labelledby="footer-navigation-title">
             <h2
               className="mb-5 text-xs font-extrabold tracking-[0.16em] text-white uppercase"
@@ -153,18 +153,13 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link className={linkClasses} href="/mensagem">
+                <Link className={linkClasses} href="/missao">
                   Missão
                 </Link>
               </li>
               <li>
                 <Link className={linkClasses} href="/palavra">
                   Palavra
-                </Link>
-              </li>
-              <li>
-                <Link className={linkClasses} href="/biblia">
-                  Bíblia
                 </Link>
               </li>
             </ul>
@@ -210,61 +205,16 @@ export function SiteFooter() {
               Dias e horários de atendimento serão informados em breve.
             </p>
           </section>
-
-          <nav aria-labelledby="footer-contact-title">
-            <h2
-              className="mb-5 text-xs font-extrabold tracking-[0.16em] text-white uppercase"
-              id="footer-contact-title"
-            >
-              Contato
-            </h2>
-            <ul className="m-0 grid list-none gap-4 p-0">
-              <li>
-                <a
-                  className={`${linkClasses} flex items-start gap-3`}
-                  href="https://www.instagram.com/frattellianos/"
-                  aria-label="Instagram — link em breve"
-                >
-                  <InstagramIcon />
-                  <span>Instagram</span>
-                </a>
-              </li>
-              {/* <li>
-                <a
-                  className={`${linkClasses} flex items-start gap-3`}
-                  href="#"
-                  aria-label="E-mail — link em breve"
-                >
-                  <MailIcon />
-                  <span>E-mail de contato</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className={`${linkClasses} flex items-start gap-3`}
-                  href="#"
-                  aria-label="WhatsApp — link em breve"
-                >
-                  <MessageIcon />
-                  <span>WhatsApp</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className={`${linkClasses} flex items-start gap-3`}
-                  href="#"
-                  aria-label="Localização — link em breve"
-                >
-                  <LocationIcon />
-                  <span>Localização</span>
-                </a>
-              </li> */}
-            </ul>
-          </nav>
         </div>
 
         <div className="mt-11 flex flex-col gap-3 border-t border-white/15 pt-7 text-xs sm:flex-row sm:items-center sm:justify-between">
-          <p className="m-0">Fé que aproxima. Amor que serve.</p>
+          <div className="grid gap-2">
+            <p className="m-0">Fé que aproxima. Amor que serve.</p>
+            <p className="m-0 max-w-150 leading-5">
+              Textos bíblicos: Nova Almeida Atualizada © 2017 Sociedade Bíblica
+              do Brasil.
+            </p>
+          </div>
           <p className="m-0">
             Frattellianos © {new Date().getFullYear()} · Desenvolvido por IWETI
           </p>

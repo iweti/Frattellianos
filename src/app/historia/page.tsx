@@ -66,9 +66,9 @@ export default function Home() {
                   buttonClasses,
                   "border-white/[0.14] hover:border-white/45",
                 )}
-                href="/mensagem"
+                href="/missao"
               >
-                Nossa mensagem
+                Nossa missão
               </Link>
             </div>
           </div>
@@ -139,7 +139,7 @@ export default function Home() {
               buttonClasses,
               "inline-flex items-center gap-[0.65rem] font-extrabold bg-brand-red text-white no-underline hover:bg-[#ff4b46]",
             )}
-            href="/mensagem"
+            href="/missao"
           >
             Entenda o que queremos transmitir <span aria-hidden="true">→</span>
           </Link>

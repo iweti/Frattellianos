@@ -33,8 +33,8 @@ export function Logo({
         priority
       />
       {!compact && (
-        <span className={`${allura.className} pt-2 align-bottom text-4xl max-[620px]:hidden not-italic`}>
-          Frattellianos
+        <span className={`${allura.className} relative left-[-41px] pt-2 align-bottom text-4xl max-[620px]:hidden not-italic`}>
+          rattellianos
         </span>
       )}
     </Link>

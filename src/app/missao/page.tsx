@@ -24,7 +24,7 @@ const pillars = [
   },
 ];
 
-export default function MessagePage() {
+export default function MissionPage() {
   return (
     <>
       <SiteHeader active="missao" />
@@ -32,11 +32,11 @@ export default function MessagePage() {
       <main className="overflow-hidden">
         <section
           className="mx-auto w-[calc(100%-2rem)] max-w-250 py-[clamp(5rem,12vw,10rem)] pb-[clamp(4rem,8vw,7rem)] text-center"
-          aria-labelledby="message-title"
+          aria-labelledby="mission-title"
         >
           <h1
             className="mx-auto mb-6 max-w-225 text-balance font-serif text-[clamp(3rem,7vw,6.8rem)] leading-[0.94] font-normal tracking-[-0.055em]"
-            id="message-title"
+            id="mission-title"
           >
             Falar de Cristo de um jeito que todos entendam.
           </h1>
@@ -71,7 +71,7 @@ export default function MessagePage() {
           </div>
         </section>
 
-        <blockquote className="mx-auto my-[clamp(4rem,9vw,8rem)] w-[calc(100%-2rem)] max-w-230 px-4 py-[clamp(2rem,5vw,4rem)] text-center text-white before:mx-auto before:mb-8 before:block before:h-1 before:w-16 before:rounded-full before:bg-brand-red before:content-['']">
+        <blockquote className="mx-auto mt-[clamp(4rem,9vw,8rem)] w-[calc(100%-2rem)] max-w-230 px-4 py-[clamp(2rem,5vw,4rem)] text-center text-white before:mx-auto before:mb-8 before:block before:h-1 before:w-16 before:rounded-full before:bg-brand-red before:content-['']">
           <p className="mx-auto mb-5 max-w-212.5 font-serif text-[clamp(2rem,5vw,4.8rem)] leading-[1.08]">
             “Eis aí um rei que irá reinar com justiça.”
           </p>
@@ -80,20 +80,16 @@ export default function MessagePage() {
           </cite>
         </blockquote>
         <section
-          className="mx-auto w-[calc(100%-2rem)] max-w-250 py-[clamp(5rem,12vw,10rem)] pb-[clamp(4rem,8vw,7rem)] text-center"
-          aria-labelledby="message-title "
+          className="mx-auto w-[calc(100%-2rem)] max-w-250 pb-[clamp(4rem,8vw,7rem)] text-center"
+          aria-labelledby="mission-title"
         >
-          <h1
-            className="mx-auto mb-6 max-w-225 text-balance font-serif text-[clamp(3rem,7vw,6.8rem)] leading-[0.94] font-normal tracking-[-0.055em]"
-            id="message-title"
-          >
+          <p className="mx-auto max-w-2xl text-[clamp(1rem,1.5vw,1.2rem)] leading-7 text-[#c7c9ce]">
             Em uma frase
-          </h1>
+          </p>
           <p className="mx-auto mb-8 max-w-2xl text-[clamp(1rem,1.5vw,1.2rem)] leading-7 text-[#c7c9ce]">
             Não queremos ser o centro. Queremos apontar o caminho.
           </p>
         </section>
-        
       </main>
 
       <SiteFooter />

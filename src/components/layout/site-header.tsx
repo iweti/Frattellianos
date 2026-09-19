@@ -4,7 +4,7 @@ import Link from "next/link";
 import { joinClasses } from "@/lib/utils";
 import { Logo } from "@/components/ui/logo";
 
-type PublicRoute = "historia" | "palavra" | "missao" | "biblia";
+type PublicRoute = "historia" | "palavra" | "missao";
 
 export function SiteHeader({ active }: { active: PublicRoute }) {
   const linkClasses =
@@ -34,7 +34,7 @@ export function SiteHeader({ active }: { active: PublicRoute }) {
               active === "missao" && "bg-surface-soft text-white",
             )}
             aria-current={active === "missao" ? "page" : undefined}
-            href="/mensagem"
+            href="/missao"
           >
             Missão
           </Link>
@@ -47,16 +47,6 @@ export function SiteHeader({ active }: { active: PublicRoute }) {
             href="/palavra"
           >
             Palavra
-          </Link>
-          <Link
-            className={joinClasses(
-              linkClasses,
-              active === "biblia" && "bg-surface-soft text-white",
-            )}
-            aria-current={active === "biblia" ? "page" : undefined}
-            href="/biblia"
-          >
-            Bíblia
           </Link>
         </nav>
       </div>

@@ -36,16 +36,19 @@ function FeaturedDailyCard({ entry }: { entry: DailyVerseEntry }) {
 
   return (
     <div className="grid min-h-[calc(100svh-69px)] grid-rows-[minmax(min-content,1fr)_auto_minmax(min-content,1fr)] py-6 max-[620px]:min-h-[calc(100svh-98px)]">
-      <div className="self-end pb-5">
-        <p className="mb-0 text-sm font-extrabold tracking-[0.18em] text-brand-red uppercase">
+      <div className="text-center self-end pb-5">
+        <h1
+            className="mx-auto mb-1 max-w-225 text-balance font-serif text-[clamp(3rem,7vw,6.8rem)] leading-[0.94] font-normal tracking-[-0.055em]"
+            id="message-title"
+          >
           Fé para todos os dias
-        </p>
-        <p className="m-0 max-w-2xl text-[clamp(1rem,1.5vw,1.15rem)] leading-7 text-[#c7c9ce]">
+        </h1>
+        <p className="m-0 text-[clamp(1rem,1.5vw,1.15rem)] leading-7 text-brand-red">
           Acompanhe a palavra escolhida para hoje e os versículos dos últimos
           dias.
         </p>
       </div>
-      <article className="overflow-hidden rounded-xl border border-brand-red/70 bg-surface shadow-[0_18px_60px_rgba(0,0,0,0.18)]">
+      <article className="mt-10 overflow-hidden rounded-xl border border-brand-red/70 bg-surface shadow-[0_18px_60px_rgba(0,0,0,0.18)]">
         <header className="flex items-center gap-3 border-b border-white/10 px-5 py-4 max-[620px]:px-4">
           <BrandAvatar />
           <div className="min-w-0">
@@ -158,10 +161,6 @@ export async function DailyVerses() {
           </section>
         )}
       </div>
-
-      <p className="mt-8 text-center text-xs leading-5 text-muted">
-        Nova Almeida Atualizada © 2017 Sociedade Bíblica do Brasil.
-      </p>
     </>
   );
 }

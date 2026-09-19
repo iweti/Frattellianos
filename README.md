@@ -6,7 +6,7 @@ Site institucional da comunidade cristã Frattellianos, criado para apresentar s
 
 ## Sobre o projeto
 
-Frattellianos nasceu de um sonho entre amigos e ganhou novo significado com a missão de aproximar pessoas de Cristo. O site reúne essa trajetória, apresenta missão, visão e valores da comunidade e oferece acesso à Palavra e à estrutura dos livros da Bíblia.
+Frattellianos nasceu de um sonho entre amigos e ganhou novo significado com a missão de aproximar pessoas de Cristo. O site reúne essa trajetória, apresenta missão, visão e valores da comunidade e oferece acesso à Palavra.
 
 ## Tecnologias
 
@@ -53,14 +53,12 @@ Clone por HTTPS não exige chave SSH para repositório público.
 
 ## Rotas
 
-| Rota              | Estado     | Descrição                                   |
-| ----------------- | ---------- | ------------------------------------------- |
-| `/`               | Disponível | Redireciona para página de história         |
-| `/historia`       | Disponível | História e apresentação do Frattellianos    |
-| `/mensagem`       | Disponível | Missão, visão e valores da comunidade       |
-| `/palavra`        | Disponível | Mensagens e versículos diários              |
-| `/biblia`         | Disponível | Lista de livros do Antigo e Novo Testamento |
-| `/biblia/[livro]` | Disponível | Lista de capítulos do livro selecionado     |
+| Rota        | Estado     | Descrição                                |
+| ----------- | ---------- | ---------------------------------------- |
+| `/`         | Disponível | Redireciona para página de história      |
+| `/historia` | Disponível | História e apresentação do Frattellianos |
+| `/missao`   | Disponível | Missão, visão e valores da comunidade    |
+| `/palavra`  | Disponível | Mensagens e versículos diários           |
 
 ## Estrutura
 
@@ -81,6 +79,5 @@ Frattellianos/
 ## Estado atual
 
 - Páginas institucionais responsivas implementadas.
-- Navegação por livros e capítulos da Bíblia implementada.
 - Identidade visual e estilos construídos com Tailwind CSS.
 - Conteúdo bíblico mantido localmente, sem backend.
