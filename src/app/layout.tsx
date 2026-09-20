@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/next";
 
 import "./globals.css";
 
@@ -22,6 +23,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen bg-brand-black bg-[radial-gradient(circle_at_80%_8%,rgba(227,49,44,0.14),transparent_28rem)] font-sans text-white">
         {children}
+        <Analytics />
       </body>
     </html>
   );
