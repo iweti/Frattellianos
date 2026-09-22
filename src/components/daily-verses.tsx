@@ -38,9 +38,9 @@ function FeaturedDailyCard({ entry }: { entry: DailyVerseEntry }) {
     <div className="grid min-h-[calc(100svh-69px)] grid-rows-[minmax(min-content,1fr)_auto_minmax(min-content,1fr)] py-6 max-[620px]:min-h-[calc(100svh-98px)]">
       <div className="text-center self-end pb-5">
         <h1
-            className="mx-auto mb-1 max-w-225 text-balance font-serif text-[clamp(3rem,7vw,6.8rem)] leading-[0.94] font-normal tracking-[-0.055em]"
-            id="message-title"
-          >
+          className="mx-auto mb-1 max-w-225 text-balance font-serif text-[clamp(3rem,7vw,6.8rem)] leading-[0.94] font-normal tracking-[-0.055em]"
+          id="message-title"
+        >
           Fé para todos os dias
         </h1>
         <p className="m-0 text-[clamp(1rem,1.5vw,1.15rem)] leading-7 text-brand-red">
@@ -140,7 +140,10 @@ export async function DailyVerses() {
         {featuredEntry && <FeaturedDailyCard entry={featuredEntry} />}
 
         {previousEntries.length > 0 && (
-          <section className="mt-12 mb-30" aria-labelledby="previous-days-title">
+          <section
+            className="mt-12 mb-30"
+            aria-labelledby="previous-days-title"
+          >
             <div className="mb-5 flex items-end justify-between gap-4">
               <h2
                 className="scroll-mt-24 font-serif text-[clamp(1.5rem,3vw,2rem)] font-normal"
