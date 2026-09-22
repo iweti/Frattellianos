@@ -140,7 +140,7 @@ export async function DailyVerses() {
         {featuredEntry && <FeaturedDailyCard entry={featuredEntry} />}
 
         {previousEntries.length > 0 && (
-          <section className="mt-12" aria-labelledby="previous-days-title">
+          <section className="mt-12 mb-30" aria-labelledby="previous-days-title">
             <div className="mb-5 flex items-end justify-between gap-4">
               <h2
                 className="scroll-mt-24 font-serif text-[clamp(1.5rem,3vw,2rem)] font-normal"
