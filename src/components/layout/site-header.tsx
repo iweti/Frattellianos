@@ -8,27 +8,14 @@ type PublicRoute = "historia" | "palavra" | "missao";
 
 export function SiteHeader({ active }: { active: PublicRoute }) {
   const linkClasses =
-    "rounded-full px-4 py-[0.7rem] text-[0.9rem] font-bold tracking-[0.04em] text-muted no-underline hover:bg-surface-soft hover:text-white max-[620px]:px-2 max-[620px]:text-[0.78rem]";
+    "rounded-full px-4 py-[0.7rem] text-[0.9rem] font-bold tracking-[0.04em] text-muted no-underline hover:bg-surface-soft hover:text-white max-[420px]:text-[0.75rem] max-[620px]:p-2";
 
   return (
-    <header className="sticky top-0 z-10 px-4 flex w-full items-center justify-between gap-8 border-b border-white/[0.14] bg-brand-black/85 backdrop-blur-2xl max-[620px]:py-[0.9rem]">
-      <div className="mx-auto flex w-full max-w-295 items-center justify-between gap-8 max-[620px]:gap-2">
-        <Link
-          className="shrink-0 no-underline"
-          href="/"
-          aria-label="Frattellianos — página inicial"
-        >
-          <div className="flex items-center gap-2">
-            <Logo
-              compact={false}
-              width={2310}
-              height={1410}
-              size="size-22"
-            />
-          </div>
-        </Link>
+    <header className="sticky top-0 z-10 px-4 flex w-full items-center justify-between gap-8 border-b border-white/[0.14] bg-brand-black/85 backdrop-blur-2xl max-[620px]:px-2 max-[620px]:py-[0.9rem]">
+      <div className="mx-auto flex w-full max-w-295 items-center justify-between gap-8 max-[620px]:gap-1">
+        <Logo compact={false} size={68} preload />
         <nav
-          className="flex items-center gap-[0.35rem]"
+          className="flex items-center gap-[0.35rem] max-[620px]:gap-0"
           aria-label="Navegação principal"
         >
           <Link
@@ -37,7 +24,7 @@ export function SiteHeader({ active }: { active: PublicRoute }) {
               active === "historia" && "bg-surface-soft text-white",
             )}
             aria-current={active === "historia" ? "page" : undefined}
-            href="/"
+            href="/historia"
           >
             História
           </Link>
@@ -47,7 +34,7 @@ export function SiteHeader({ active }: { active: PublicRoute }) {
               active === "missao" && "bg-surface-soft text-white",
             )}
             aria-current={active === "missao" ? "page" : undefined}
-            href="/mensagem"
+            href="/missao"
           >
             Missão
           </Link>
