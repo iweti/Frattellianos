@@ -1,3 +1,95 @@
+import verse01 from "./daily-verses/references/joao/3-16";
+import verse02 from "./daily-verses/references/salmos/23-1";
+import verse03 from "./daily-verses/references/isaias/41-10";
+import verse04 from "./daily-verses/references/romanos/12-12";
+import verse05 from "./daily-verses/references/1-corintios/13-13";
+import verse06 from "./daily-verses/references/filipenses/4-6";
+import verse07 from "./daily-verses/references/romanos/15-13";
+import verse08 from "./daily-verses/references/salmos/119-105";
+import verse09 from "./daily-verses/references/proverbios/3-5";
+import verse10 from "./daily-verses/references/mateus/11-28";
+import verse11 from "./daily-verses/references/filipenses/4-13";
+import verse12 from "./daily-verses/references/salmos/46-1";
+import verse13 from "./daily-verses/references/salmos/37-5";
+import verse14 from "./daily-verses/references/1-pedro/5-7";
+import verse15 from "./daily-verses/references/hebreus/13-8";
+import verse16 from "./daily-verses/references/joao/14-6";
+import verse17 from "./daily-verses/references/2-corintios/5-17";
+import verse18 from "./daily-verses/references/galatas/5-22-23";
+import verse19 from "./daily-verses/references/mateus/6-33";
+import verse20 from "./daily-verses/references/romanos/8-28";
+import verse21 from "./daily-verses/references/josue/1-9";
+import verse22 from "./daily-verses/references/salmos/34-8";
+import verse23 from "./daily-verses/references/salmos/51-10";
+import verse24 from "./daily-verses/references/salmos/56-3";
+import verse25 from "./daily-verses/references/salmos/118-24";
+import verse26 from "./daily-verses/references/salmos/121-1-2";
+import verse27 from "./daily-verses/references/salmos/147-3";
+import verse28 from "./daily-verses/references/proverbios/4-23";
+import verse29 from "./daily-verses/references/proverbios/16-3";
+import verse30 from "./daily-verses/references/proverbios/17-17";
+import verse31 from "./daily-verses/references/eclesiastes/3-1";
+import verse32 from "./daily-verses/references/isaias/40-31";
+import verse33 from "./daily-verses/references/isaias/43-2";
+import verse34 from "./daily-verses/references/jeremias/29-11";
+import verse35 from "./daily-verses/references/lamentacoes/3-22-23";
+import verse36 from "./daily-verses/references/mateus/5-14";
+import verse37 from "./daily-verses/references/mateus/7-7";
+import verse38 from "./daily-verses/references/mateus/19-26";
+import verse39 from "./daily-verses/references/marcos/9-23";
+import verse40 from "./daily-verses/references/lucas/1-37";
+import verse41 from "./daily-verses/references/joao/8-12";
+import verse42 from "./daily-verses/references/joao/16-33";
+import verse43 from "./daily-verses/references/romanos/8-31";
+import verse44 from "./daily-verses/references/romanos/10-17";
+import verse45 from "./daily-verses/references/1-corintios/10-31";
+import verse46 from "./daily-verses/references/2-corintios/12-9";
+import verse47 from "./daily-verses/references/galatas/6-9";
+import verse48 from "./daily-verses/references/efesios/4-32";
+import verse49 from "./daily-verses/references/filipenses/4-4";
+import verse50 from "./daily-verses/references/colossenses/3-23";
+import verse51 from "./daily-verses/references/1-tessalonicenses/5-16-18";
+import verse52 from "./daily-verses/references/salmos/27-14";
+import verse53 from "./daily-verses/references/romanos/12-21";
+import verse54 from "./daily-verses/references/1-tessalonicenses/5-21";
+import verse55 from "./daily-verses/references/mateus/5-9";
+import verse56 from "./daily-verses/references/tiago/1-19";
+import verse57 from "./daily-verses/references/salmos/27-13";
+import verse58 from "./daily-verses/references/romanos/12-18";
+import verse59 from "./daily-verses/references/1-tessalonicenses/5-22";
+import verse60 from "./daily-verses/references/mateus/5-7";
+import verse61 from "./daily-verses/references/lucas/6-36";
+import verse62 from "./daily-verses/references/romanos/12-9";
+import verse63 from "./daily-verses/references/romanos/12-10";
+import verse64 from "./daily-verses/references/romanos/12-11";
+import verse65 from "./daily-verses/references/romanos/12-13";
+import verse66 from "./daily-verses/references/romanos/12-14";
+import verse67 from "./daily-verses/references/romanos/12-15";
+import verse68 from "./daily-verses/references/romanos/12-17";
+import verse69 from "./daily-verses/references/1-tessalonicenses/5-6";
+import verse70 from "./daily-verses/references/1-tessalonicenses/5-11";
+import verse71 from "./daily-verses/references/1-tessalonicenses/5-19";
+import verse72 from "./daily-verses/references/1-tessalonicenses/5-20";
+import verse73 from "./daily-verses/references/1-tessalonicenses/5-25";
+import verse74 from "./daily-verses/references/1-tessalonicenses/5-28";
+import verse75 from "./daily-verses/references/mateus/5-3";
+import verse76 from "./daily-verses/references/mateus/5-4";
+import verse77 from "./daily-verses/references/mateus/5-5";
+import verse78 from "./daily-verses/references/mateus/5-6";
+import verse79 from "./daily-verses/references/mateus/5-8";
+import verse80 from "./daily-verses/references/mateus/5-10";
+import verse81 from "./daily-verses/references/tiago/1-4";
+import verse82 from "./daily-verses/references/tiago/1-5";
+import verse83 from "./daily-verses/references/tiago/1-16";
+import verse84 from "./daily-verses/references/tiago/1-20";
+import verse85 from "./daily-verses/references/tiago/1-22";
+import verse86 from "./daily-verses/references/proverbios/15-1";
+import verse87 from "./daily-verses/references/proverbios/15-3";
+import verse88 from "./daily-verses/references/proverbios/15-13";
+import verse89 from "./daily-verses/references/proverbios/15-17";
+import verse90 from "./daily-verses/references/proverbios/15-22";
+import verse91 from "./daily-verses/references/proverbios/15-23";
+
 export type DailyVerse = {
   id: string;
   text: string;
@@ -6,310 +98,95 @@ export type DailyVerse = {
 };
 
 export const dailyVerses = [
-  {
-    id: "joao-3-16",
-    text: "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo o que nele crê não pereça, mas tenha a vida eterna.",
-    reference: "João 3:16",
-    translation: "NAA",
-  },
-  {
-    id: "salmos-23-1",
-    text: "O Senhor é o meu pastor; nada me faltará.",
-    reference: "Salmos 23:1",
-    translation: "NAA",
-  },
-  {
-    id: "isaias-41-10",
-    text: "Não tema, porque eu estou com você; não fique com medo, porque eu sou o seu Deus. Eu lhe dou forças; sim, eu o ajudo; sim, eu o seguro com a mão direita da minha justiça.",
-    reference: "Isaías 41:10",
-    translation: "NAA",
-  },
-  {
-    id: "romanos-12-12",
-    text: "Alegrem-se na esperança, sejam pacientes na tribulação e perseverem na oração.",
-    reference: "Romanos 12:12",
-    translation: "NAA",
-  },
-  {
-    id: "1-corintios-13-13",
-    text: "Agora, pois, permanecem a fé, a esperança e o amor, estes três; porém o maior deles é o amor.",
-    reference: "1 Coríntios 13:13",
-    translation: "NAA",
-  },
-  {
-    id: "filipenses-4-6",
-    text: "Não fiquem preocupados com coisa alguma, mas, em tudo, sejam conhecidos diante de Deus os pedidos de vocês, pela oração e pela súplica, com ações de graças.",
-    reference: "Filipenses 4:6",
-    translation: "NAA",
-  },
-  {
-    id: "romanos-15-13",
-    text: "E o Deus da esperança encha vocês de toda alegria e paz na fé que vocês têm, para que sejam ricos de esperança no poder do Espírito Santo.",
-    reference: "Romanos 15:13",
-    translation: "NAA",
-  },
-  {
-    id: "salmos-119-105",
-    text: "Lâmpada para os meus pés é a tua palavra, e luz para o meu caminho.",
-    reference: "Salmos 119:105",
-    translation: "NAA",
-  },
-  {
-    id: "proverbios-3-5",
-    text: "Confie no Senhor de todo o seu coração e não se apoie no seu próprio entendimento.",
-    reference: "Provérbios 3:5",
-    translation: "NAA",
-  },
-  {
-    id: "mateus-11-28",
-    text: "Venham a mim todos vocês que estão cansados e sobrecarregados, e eu os aliviarei.",
-    reference: "Mateus 11:28",
-    translation: "NAA",
-  },
-  {
-    id: "filipenses-4-13",
-    text: "Tudo posso naquele que me fortalece.",
-    reference: "Filipenses 4:13",
-    translation: "NAA",
-  },
-  {
-    id: "salmos-46-1",
-    text: "Deus é o nosso refúgio e a nossa força, socorro que não falta em tempos de aflição.",
-    reference: "Salmos 46:1",
-    translation: "NAA",
-  },
-  {
-    id: "salmos-37-5",
-    text: "Entregue o seu caminho ao Senhor, confie nele, e o mais ele fará.",
-    reference: "Salmos 37:5",
-    translation: "NAA",
-  },
-  {
-    id: "1-pedro-5-7",
-    text: "Lancem sobre ele todas as suas ansiedades, porque ele cuida de vocês.",
-    reference: "1 Pedro 5:7",
-    translation: "NAA",
-  },
-  {
-    id: "hebreus-13-8",
-    text: "Jesus Cristo é o mesmo ontem, hoje e para sempre.",
-    reference: "Hebreus 13:8",
-    translation: "NAA",
-  },
-  {
-    id: "joao-14-6",
-    text: "Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai senão por mim.",
-    reference: "João 14:6",
-    translation: "NAA",
-  },
-  {
-    id: "2-corintios-5-17",
-    text: "E, assim, se alguém está em Cristo, é nova criatura; as coisas antigas já passaram; eis que se fizeram novas.",
-    reference: "2 Coríntios 5:17",
-    translation: "NAA",
-  },
-  {
-    id: "gálatas-5-22",
-    text: "Mas o fruto do Espírito é: amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e domínio próprio.",
-    reference: "Gálatas 5:22-23",
-    translation: "NAA",
-  },
-  {
-    id: "mateus-6-33",
-    text: "Busquem, pois, em primeiro lugar, o Reino de Deus e a sua justiça, e todas estas coisas lhes serão acrescentadas.",
-    reference: "Mateus 6:33",
-    translation: "NAA",
-  },
-  {
-    id: "romanos-8-28",
-    text: "Sabemos que todas as coisas cooperam para o bem daqueles que amam a Deus, daqueles que são chamados segundo o seu propósito.",
-    reference: "Romanos 8:28",
-    translation: "NAA",
-  },
-  {
-    id: "josue-1-9",
-    text: "Seja forte e corajoso! Não tenha medo, nem fique assustado, porque o Senhor, seu Deus, estará com você por onde quer que você andar.",
-    reference: "Josué 1:9",
-    translation: "NAA",
-  },
-  {
-    id: "salmos-34-8",
-    text: "Provem e vejam que o Senhor é bom; bem-aventurado é quem nele se refugia.",
-    reference: "Salmos 34:8",
-    translation: "NAA",
-  },
-  {
-    id: "salmos-51-10",
-    text: "Cria em mim, ó Deus, um coração puro e renova dentro de mim um espírito inabalável.",
-    reference: "Salmos 51:10",
-    translation: "NAA",
-  },
-  {
-    id: "salmos-56-3",
-    text: "Quando eu ficar com medo, hei de confiar em ti.",
-    reference: "Salmos 56:3",
-    translation: "NAA",
-  },
-  {
-    id: "salmos-118-24",
-    text: "Este é o dia que o Senhor fez; exultemos e alegremo-nos nele.",
-    reference: "Salmos 118:24",
-    translation: "NAA",
-  },
-  {
-    id: "salmos-121-1-2",
-    text: "Elevo os meus olhos para os montes: de onde me virá o socorro? O meu socorro vem do Senhor, que fez o céu e a terra.",
-    reference: "Salmos 121:1-2",
-    translation: "NAA",
-  },
-  {
-    id: "salmos-147-3",
-    text: "Sara os de coração quebrantado e trata das feridas deles.",
-    reference: "Salmos 147:3",
-    translation: "NAA",
-  },
-  {
-    id: "proverbios-4-23",
-    text: "De tudo o que se deve guardar, guarde bem o seu coração, porque dele procedem as fontes da vida.",
-    reference: "Provérbios 4:23",
-    translation: "NAA",
-  },
-  {
-    id: "proverbios-16-3",
-    text: "Confie ao Senhor as suas obras, e os seus desígnios serão estabelecidos.",
-    reference: "Provérbios 16:3",
-    translation: "NAA",
-  },
-  {
-    id: "proverbios-17-17",
-    text: "O amigo ama em todo tempo, e na angústia nasce o irmão.",
-    reference: "Provérbios 17:17",
-    translation: "NAA",
-  },
-  {
-    id: "eclesiastes-3-1",
-    text: "Tudo tem o seu tempo determinado, e há tempo para todo propósito debaixo do céu.",
-    reference: "Eclesiastes 3:1",
-    translation: "NAA",
-  },
-  {
-    id: "isaias-40-31",
-    text: "Mas os que esperam no Senhor renovam as suas forças, sobem com asas como águias, correm e não se cansam, caminham e não se fatigam.",
-    reference: "Isaías 40:31",
-    translation: "NAA",
-  },
-  {
-    id: "isaias-43-2",
-    text: "Quando você passar pelas águas, eu estarei com você; quando passar pelos rios, eles não o submergirão; quando passar pelo fogo, você não se queimará; as chamas não o atingirão.",
-    reference: "Isaías 43:2",
-    translation: "NAA",
-  },
-  {
-    id: "jeremias-29-11",
-    text: "Eu é que sei que pensamentos tenho a respeito de vocês, diz o Senhor. São pensamentos de paz e não de mal, para dar-lhes um futuro e uma esperança.",
-    reference: "Jeremias 29:11",
-    translation: "NAA",
-  },
-  {
-    id: "lamentacoes-3-22-23",
-    text: "As misericórdias do Senhor são a causa de não sermos consumidos, porque as suas misericórdias não têm fim; renovam-se cada manhã. Grande é a tua fidelidade.",
-    reference: "Lamentações 3:22-23",
-    translation: "NAA",
-  },
-  {
-    id: "mateus-5-14",
-    text: "Vocês são a luz do mundo. Não se pode esconder uma cidade situada no alto de um monte.",
-    reference: "Mateus 5:14",
-    translation: "NAA",
-  },
-  {
-    id: "mateus-7-7",
-    text: "Peçam e lhes será dado; busquem e acharão; batam, e a porta será aberta para vocês.",
-    reference: "Mateus 7:7",
-    translation: "NAA",
-  },
-  {
-    id: "mateus-19-26",
-    text: "Jesus, olhando para eles, disse: — Para os seres humanos isto é impossível, mas para Deus tudo é possível.",
-    reference: "Mateus 19:26",
-    translation: "NAA",
-  },
-  {
-    id: "marcos-9-23",
-    text: "Ao que Jesus respondeu: — ‘Se o senhor pode’? Tudo é possível ao que crê.",
-    reference: "Marcos 9:23",
-    translation: "NAA",
-  },
-  {
-    id: "lucas-1-37",
-    text: "Porque para Deus não há nada impossível.",
-    reference: "Lucas 1:37",
-    translation: "NAA",
-  },
-  {
-    id: "joao-8-12",
-    text: "De novo, Jesus lhes falou, dizendo: — Eu sou a luz do mundo. Quem me segue não andará nas trevas; pelo contrário, terá a luz da vida.",
-    reference: "João 8:12",
-    translation: "NAA",
-  },
-  {
-    id: "joao-16-33",
-    text: "Estas coisas eu disse para que vocês tenham paz em mim. No mundo, vocês passam por aflições; mas tenham coragem: eu venci o mundo.",
-    reference: "João 16:33",
-    translation: "NAA",
-  },
-  {
-    id: "romanos-8-31",
-    text: "Que diremos, então, à vista destas coisas? Se Deus é por nós, quem será contra nós?",
-    reference: "Romanos 8:31",
-    translation: "NAA",
-  },
-  {
-    id: "romanos-10-17",
-    text: "E, assim, a fé vem pelo ouvir, e o ouvir, pela palavra de Cristo.",
-    reference: "Romanos 10:17",
-    translation: "NAA",
-  },
-  {
-    id: "1-corintios-10-31",
-    text: "Portanto, se vocês comem, ou bebem ou fazem qualquer outra coisa, façam tudo para a glória de Deus.",
-    reference: "1 Coríntios 10:31",
-    translation: "NAA",
-  },
-  {
-    id: "2-corintios-12-9",
-    text: "Então ele me disse: — A minha graça é o que basta para você, porque o poder se aperfeiçoa na fraqueza.",
-    reference: "2 Coríntios 12:9",
-    translation: "NAA",
-  },
-  {
-    id: "galatas-6-9",
-    text: "E não nos cansemos de fazer o bem, porque no tempo certo faremos a colheita, se não desanimarmos.",
-    reference: "Gálatas 6:9",
-    translation: "NAA",
-  },
-  {
-    id: "efesios-4-32",
-    text: "Pelo contrário, sejam bondosos e compassivos uns para com os outros, perdoando uns aos outros, como também Deus, em Cristo, perdoou vocês.",
-    reference: "Efésios 4:32",
-    translation: "NAA",
-  },
-  {
-    id: "filipenses-4-4",
-    text: "Alegrem-se sempre no Senhor; outra vez digo: alegrem-se!",
-    reference: "Filipenses 4:4",
-    translation: "NAA",
-  },
-  {
-    id: "colossenses-3-23",
-    text: "Tudo o que fizerem, façam de todo o coração, como para o Senhor e não para as pessoas.",
-    reference: "Colossenses 3:23",
-    translation: "NAA",
-  },
-  {
-    id: "1-tessalonicenses-5-16-18",
-    text: "Estejam sempre alegres. Orem sem cessar. Em tudo, deem graças, porque esta é a vontade de Deus para vocês em Cristo Jesus.",
-    reference: "1 Tessalonicenses 5:16-18",
-    translation: "NAA",
-  },
+  verse01,
+  verse02,
+  verse03,
+  verse04,
+  verse05,
+  verse06,
+  verse07,
+  verse08,
+  verse09,
+  verse10,
+  verse11,
+  verse12,
+  verse13,
+  verse14,
+  verse15,
+  verse16,
+  verse17,
+  verse18,
+  verse19,
+  verse20,
+  verse21,
+  verse22,
+  verse23,
+  verse24,
+  verse25,
+  verse26,
+  verse27,
+  verse28,
+  verse29,
+  verse30,
+  verse31,
+  verse32,
+  verse33,
+  verse34,
+  verse35,
+  verse36,
+  verse37,
+  verse38,
+  verse39,
+  verse40,
+  verse41,
+  verse42,
+  verse43,
+  verse44,
+  verse45,
+  verse46,
+  verse47,
+  verse48,
+  verse49,
+  verse50,
+  verse51,
+  verse52,
+  verse53,
+  verse54,
+  verse55,
+  verse56,
+  verse57,
+  verse58,
+  verse59,
+  verse60,
+  verse61,
+  verse62,
+  verse63,
+  verse64,
+  verse65,
+  verse66,
+  verse67,
+  verse68,
+  verse69,
+  verse70,
+  verse71,
+  verse72,
+  verse73,
+  verse74,
+  verse75,
+  verse76,
+  verse77,
+  verse78,
+  verse79,
+  verse80,
+  verse81,
+  verse82,
+  verse83,
+  verse84,
+  verse85,
+  verse86,
+  verse87,
+  verse88,
+  verse89,
+  verse90,
+  verse91,
 ] as const satisfies readonly DailyVerse[];
