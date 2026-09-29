@@ -38,7 +38,7 @@ function FeaturedDailyCard({ entry }: { entry: DailyVerseEntry }) {
     <div className="grid min-h-[calc(100svh-69px)] grid-rows-[minmax(min-content,1fr)_auto_minmax(min-content,1fr)] py-6 max-[620px]:min-h-[calc(100svh-98px)]">
       <div className="text-center self-end pb-5">
         <h1
-          className="mx-auto mb-4 max-w-225 text-balance font-serif text-[clamp(3rem,7vw,6.8rem)] leading-[0.94] font-normal tracking-[-0.055em]"
+          className="mx-auto mb-8 max-w-225 text-balance font-serif text-[clamp(3rem,7vw,6.8rem)] leading-[0.94] font-normal tracking-[-0.055em]"
           id="message-title"
         >
           Fé para todos os dias
@@ -48,7 +48,7 @@ function FeaturedDailyCard({ entry }: { entry: DailyVerseEntry }) {
           dias.
         </p>
       </div>
-      <article className="mt-10 overflow-hidden rounded-xl border border-brand-red/70 bg-surface shadow-[0_18px_60px_rgba(0,0,0,0.18)]">
+      <article className="mt-6 overflow-hidden rounded-xl border border-brand-red/70 bg-surface shadow-[0_18px_60px_rgba(0,0,0,0.18)]">
         <header className="flex items-center gap-3 border-b border-white/10 px-5 py-4 max-[620px]:px-4">
           <BrandAvatar />
           <div className="min-w-0">
